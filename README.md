@@ -29,7 +29,7 @@ search using the roman numeral indexed legend for system lookup
 ---
 ---
 
-# IDE
+# :: IDE ::
 ---
 
 # I. VSCODE
@@ -418,7 +418,7 @@ ctrl + k, ctrl + x
 ---
 ---
 
-# TERMINAL
+# :: TERMINAL ::
 ---
 
 # III. Bash
@@ -706,7 +706,7 @@ should see this:
 ---
 ---
 
-# OS
+# :: Operating System ::
 ---
 
 # IX. Ubuntu
@@ -741,7 +741,7 @@ cmd      // enter cmd to open cmd in this location
 ---
 ---
 
-# Misc.
+# :: Misc. ::
 ---
 
 # XI. CRON
