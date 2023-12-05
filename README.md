@@ -83,12 +83,9 @@ ctrl + g
 ctrl + shift + l
 ```
 
-### SSL CERTS:
-"caddy" (server caddy) let's encrypt for free (replace nginx & certbot) 
-kubernetes --> ingress controller --> for free let's encrypt (replace nginx & certbot)
-
-**vscode**
 `ctrl + K + M` --> "change language mode" --> JSON to format JSON stringified object grabbed from browser
+
+---
 
 # Bash
 `following are bash specific`
@@ -252,8 +249,9 @@ declare -p ARR
 # --> -a === array
 ```
 
+---
 
-### Node
+# Node
 
 `find all running node processes`
 ```
