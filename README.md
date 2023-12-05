@@ -1,5 +1,5 @@
 ```ts
-this is my index offor all useful commands and shortcuts of various languages and IDEs i have encounterd
+this is my index of useful commands and shortcuts i have encounterd
 ```
 
 ```java
