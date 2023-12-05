@@ -3,7 +3,7 @@ this is a cataloging of commands and shortcuts i have found useful along my codi
 ```
 
 ```ts
-ctrl + f to search for the specific cli term you are looking for 
+ctrl + f to search for the specific cli term you are looking for which have helpful descriptions with keywords
 ```
 
 ```ts
@@ -14,34 +14,23 @@ search using the roman numeral indexed legend for system lookup
 | :---: | ------- |
 | n     | example |
 
-| Index | IDE           |
-| :---: | ------------- |
-| I     | VSCode        |
-| II    | Visual Studio |
-
-| Index | Terminal       |
-| :---: | -------------- |
-| III   | Bash           |
-| IV    | Powershell     |
-| V     | Command Prompt |
-| VI    | Oh My Zsh!     |
-
-| Index | Framework      |
-| :---: | -------------- |
-| VII   | Node           |
-| VIII  | .Net           |
-
-| Index | Operating System |
-| :---: | ---------------- |
-| IX    | Ubuntu           |
-| X     | Windows          |
-
-| Index | Misc.          |
-| :---: | -------------- |
-| XI    | Cron           |
+| Index | Technology     | System           |
+| :---: | -------------- | ---------------- |
+| I     | VSCode         | IDE              |
+| II    | Visual Studio  | |
+| III   | Bash           | Terminal         |
+| IV    | Powershell     | |
+| V     | Command Prompt | |
+| VI    | Oh My Zsh!     | |
+| VII   | Node           | Framework        |
+| VIII  | .Net           | |
+| IX    | Ubuntu         | Operating System |
+| X     | Windows        | |
+| XI    | Cron           | Misc.            |
 | XII   | Postman        |
 | XIII  | Tree           |
 
+---
 
 # IDE
 
