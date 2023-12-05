@@ -7,7 +7,7 @@ ctrl + f to search for the specific cli term you are looking for which have help
 ```
 
 ```ts
-search using the roman numeral indexed legend for system lookup
+search using the roman numeral indexed legend for system or technology lookup
 ```
 
 | Index | Technology     | System           |
