@@ -1,5 +1,5 @@
 ```ts
-will add all helpful commands and keep them documented
+this is my index offor all useful commands and shortcuts of various languages and IDEs i have encounterd
 ```
 
 ```java
