@@ -10,31 +10,26 @@ ctrl + f to search for the specific cli term you are looking for which have help
 search using the roman numeral indexed legend for system lookup
 ```
 
-| Index | System  |
-| :---: | ------- |
-| n     | example |
-
 | Index | Technology     | System           |
 | :---: | -------------- | ---------------- |
 | I     | VSCode         | IDE              |
-| II    | Visual Studio  | |
+| II    | Visual Studio  | IDE              |
 | III   | Bash           | Terminal         |
-| IV    | Powershell     | |
-| V     | Command Prompt | |
-| VI    | Oh My Zsh!     | |
+| IV    | Powershell     | Terminal         |
+| V     | Command Prompt | Terminal         |
+| VI    | Oh My Zsh!     | Terminal         |
 | VII   | Node           | Framework        |
-| VIII  | .Net           | |
+| VIII  | .Net           | Framework        |
 | IX    | Ubuntu         | Operating System |
-| X     | Windows        | |
+| X     | Windows        | Operating System |
 | XI    | Cron           | Misc.            |
-| XII   | Postman        |
-| XIII  | Tree           |
+| XII   | Postman        | Misc.            |
+| XIII  | Tree           | Misc.            |
 
+---
 ---
 
 # IDE
-
----
 ---
 
 # I. VSCODE
@@ -424,8 +419,6 @@ ctrl + k, ctrl + x
 ---
 
 # TERMINAL
-
----
 ---
 
 # III. Bash
@@ -665,7 +658,6 @@ p10k configure
 ---
 # FRAMEWORKS
 ---
----
 
 # VII. Node
 
@@ -715,8 +707,6 @@ should see this:
 ---
 
 # OS
-
----
 ---
 
 # IX. Ubuntu
@@ -752,8 +742,6 @@ cmd      // enter cmd to open cmd in this location
 ---
 
 # Misc.
-
----
 ---
 
 # XI. CRON
