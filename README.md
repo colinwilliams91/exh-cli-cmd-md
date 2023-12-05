@@ -311,7 +311,6 @@ shift + fn + fn11
 ```sh
 ctrl + shift + fn + f5
 ```
----
 
 `replace (find and replace)`
 ```
