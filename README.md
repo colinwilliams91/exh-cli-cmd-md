@@ -85,7 +85,6 @@ ctrl + shift + l
 
 `ctrl + K + M` --> "change language mode" --> JSON to format JSON stringified object grabbed from browser
 
----
 
 # Bash
 `following are bash specific`
@@ -249,8 +248,6 @@ declare -p ARR
 # --> -a === array
 ```
 
----
-
 # Node
 
 `find all running node processes`
@@ -285,7 +282,7 @@ set -x
 # Your script goes here
 ```
 
-### CRON
+# CRON
 **For Ubuntu/Debian, you can find `cron`logs at:**
 ```bash
 /var/log/syslog
@@ -306,12 +303,12 @@ Client Secret: {{google_client_secret}}
 grep nri // <-- 
 ```
 
-##### `To get a list of all listening TCP ports using lsof`
+`To get a list of all listening TCP ports using lsof`
 ```bash
 sudo lsof -nP -iTCP -sTCP:LISTEN
 ```
 
-##### `using ss tool (formerly netstat) to list all open ports`
+`using ss tool (formerly netstat) to list all open ports`
 ```bash
 ss -tulpn
 ```
@@ -432,7 +429,7 @@ dotnet new console -o ./CsharpProjects/TestProject
 # pass `--use-program-main` for Program Class template
 ```
 
-(VSCODE)
+**(VSCODE)**
 `generate assets for build and debug`
 ```C#
 ctrl + shift + p // cmd pallette
@@ -685,19 +682,19 @@ alt + enter
 ctrl + shift + b
 ```
 
-#### Refactor
+### Refactor
 `extract method`
 ```C#
 ctrl + r, ctrl + m
 ```
 
-#### Object Browser
+### Object Browser
 ```sh
 ctrl + alt + j
 ```
 - `ctrl + click` on `var` or `type identifier` to open object definition, which will show all attributes and methods on datatype "constructor" parent object ("`struct`" in C#) (available methods)
 
-#### CODE SNIPPETS (inside VS)
+### CODE SNIPPETS (inside VS)
 - enter these aliases inside your IDE text editor
 `Console.WriteLine()`
 ```sh
