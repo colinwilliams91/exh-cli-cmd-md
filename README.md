@@ -1,7 +1,7 @@
 
 > this is a cataloging of commands and shortcuts i have found useful along my coding journey
 
-> ctrl + f to search for the specific cli term you are looking for which have helpful descriptions with keywords
+`ctrl + f to search for the specific cli term you are looking for which have helpful descriptions with keywords`
 
 > search using the roman numeral indexed legend for system or technology lookup
 
