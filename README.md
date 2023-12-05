@@ -1,5 +1,5 @@
 ```ts
-this is my index of useful commands and shortcuts i have encounterd
+this is a cataloging of commands and shortcuts i have found useful along my coding journey
 ```
 
 ```java
