@@ -1,14 +1,9 @@
-```ts
-this is a cataloging of commands and shortcuts i have found useful along my coding journey
-```
 
-```ts
-ctrl + f to search for the specific cli term you are looking for which have helpful descriptions with keywords
-```
+_this is a cataloging of commands and shortcuts i have found useful along my coding journey_
 
-```ts
-search using the roman numeral indexed legend for system or technology lookup
-```
+_ctrl + f to search for the specific cli term you are looking for which have helpful descriptions with keywords_
+
+_search using the roman numeral indexed legend for system or technology lookup_
 
 | Index | Technology     | System           |
 | :---: | -------------- | ---------------- |
