@@ -2,10 +2,53 @@
 this is a cataloging of commands and shortcuts i have found useful along my coding journey
 ```
 
-```java
-ctrl + f to search for cli term you are looking for
+```ts
+ctrl + f to search for the specific cli term you are looking for 
 ```
-# VSCODE
+
+```ts
+search using the roman numeral indexed legend for system lookup
+```
+
+| Index | System  |
+| :---: | ------- |
+| n     | example |
+
+| Index | IDE           |
+| :---: | ------------- |
+| I     | VSCode        |
+| II    | Visual Studio |
+
+| Index | Terminal       |
+| :---: | -------------- |
+| III   | Bash           |
+| IV    | Powershell     |
+| V     | Command Prompt |
+| VI    | Oh My Zsh!     |
+
+| Index | Framework      |
+| :---: | -------------- |
+| VII   | Node           |
+| VIII  | .Net           |
+
+| Index | Operating System |
+| :---: | ---------------- |
+| IX    | Ubuntu           |
+| X     | Windows          |
+
+| Index | Misc.          |
+| :---: | -------------- |
+| XI    | Cron           |
+| XII   | Postman        |
+| XIII  | Tree           |
+
+
+# IDE
+
+---
+---
+
+# I. VSCODE
 `open file "side by side" (in new panel)`
 ```ts
 ctrl + \
@@ -85,360 +128,7 @@ ctrl + shift + l
 
 `ctrl + K + M` --> "change language mode" --> JSON to format JSON stringified object grabbed from browser
 
-
-# Bash
-`following are bash specific`
-
-**EXPLORER WINDOWS FILE SYSTEM**
-`open windows file explorer GUI for WSL`
-```sh
-explorer.exe .
-```
-##### How to `echo` or `cat` write to a file with Bash:
-```bash
-cat >> /path/to/existingFile.text<< EOF
-some text line 1
-some text line 2
-some text line 3
-EOF
-```
-switch `cat >>` to `cat >` to create a file instead of append
-```bash
-cat > /path/to/newFile.text<< EOF
-some text line 1
-some text line 2
-some text line 3
-EOF
-```
-
-`(( expression ))` <-- this will execute/perform an expression
-
-`print BASH env`
-```sh
-printenv
-```
-
-`echo variables` (example how to access vars in BASH)
-```sh
-echo $LANG # <-- LANG env var (bash)
-```
-
-`$RANDOM in BASH will create a random number`
-```sh
-echo $RANDOM # <-- 22024 : between 0 and 32767
-```
-
-```sh
-I=0 # <-- passing this in the terminal will persist a var
-(( I++ )) # <-- I will now become 1 and persist
-# we don't need to prepend $ for vars in (( expression ))
-```
-
-`this will print expressions for (( expression )) operations`
-```sh
-help let
-```
-##### `View file "long" with permissions list`
-```sh
-ls -l
-```
-
-`-rw-r--r--` in front of the file indicates the permissions: **`r` = read, `w` = write, `x` = execute**
-**output:** `-rwxr-xr-x` <-- see **`x`** by 3 different "users" (all users can execute now)
-##### `Give executable permissions to a file`
-```sh
-chmod +x filename.whatever
-```
-
-`man` command is "manual" (like `help`)
-```sh
-man bash # <-- prints manual for bash
-man sleep # <-- prints manual for sleep (binary)
-```
-
-**`-e` flag needed for special characters**
-```sh
-echo -e "\n~~ Countdown Timer ~~\n"
-```
-
-`lists root of the file system`
-```sh
-ls /
-```
-_ls /bin will list all binaries on the file system. Bash lives here: #!/bin/bash which will use bash commands. we can access other binaries or libraries here_
-
-
-`lists bash commands`
-```sh
-help
-```
-
-`things we can pass to the bash TEST command (for testing true/false (for ifs or [[ EXPRESSIONS ]]))
-```sh
-help test
-```
-
-```sh
-( expression ) # <-- evaluates expression/returns value
-```
-
-```sh
-help [[ expression ]] # <-- output below
-```
-
-      ( EXPRESSION )    Returns the value of EXPRESSION
-      ! EXPRESSION              True if EXPRESSION is false; else false
-      EXPR1 && EXPR2    True if both EXPR1 and EXPR2 are true; else false
-      EXPR1 || EXPR2    True if either EXPR1 or EXPR2 is true; else false
-
-    When the `==' and `!=' operators are used, the string to the right of
-    the operator is used as a pattern and pattern matching is performed.
-    When the `=~' operator is used, the string to the right of the operator
-    is matched as a regular expression.  
-
-    The && and || operators do not evaluate EXPR2 if EXPR1 is sufficient to
-    determine the expression's value.
-
-    Exit Status:
-    Returns success if EXPR evaluates to true; fails if EXPR evaluates to
-    false or an invalid argument is given.
-
-**`we can evaluate any expression in the BASH terminal or .sh script:`**
-```sh
-[[ 4 -le 5 ]] # <-- `-le` === less-than-or-equal
-```
-
-`echo $?`
-```sh
-echo $? # <-- prints last bash command's EXIT STATUS
-0 # <-- 0 === true (0 === no errors)
-
-[[ 4 -ge 5 ]]
-echo $?
-1 # <-- 1 === false (> 0 === contains errors | "false")
-```
-
-```sh
-[[ 4 -ge 5 ]]; echo $? # <-- run multiple comands on single line with `;`
-1 # <-- output
-```
-
-**_we can think of `0` return as TRUE but it actually means `command had 0 errors`_** (***EXIT STATUS***)
-
-`check if a file exists (and output EXIT STATUS)` **`-a | -e`**
-_THIS WILL CHECK THE FOLDER FROM WHERE THE COMMAND WAS ENTERED_
-```sh
-[[ -a countdown.sh  ]]; echo $?
-0 # <-- output 0 if file exists
-```
-
-`to list all variables in BASH`
-```sh
-declare -p
-```
-
-
-`all variables: @ | *`
-```sh
-ARR=("a" "b" "c")
-echo ${ARR[@]}
-
-declare -p ARR 
-# --> declare -a ARR=([0]="a" [1]="b" [2]="c")
-# --> -a === array
-```
-
-# Node
-
-`find all running node processes`
-```
-ps -ef | grep node
-```
-
-`find node process by port`
-```
-lsof -i :3000
-```
-
-`kill process`
-```
-kill -9 PROCESS_ID 
-```
-### Read (capture user INPUT)
-
-`capture user input`
-```sh
-read
-```
-
-### Debugging in Bash
-
-`set -x` _at the top of a script enables debugging (printing executed commands to the terminal)_
-```bash
-#!/bin/bash
-
-set -x
-
-# Your script goes here
-```
-
-# CRON
-**For Ubuntu/Debian, you can find `cron`logs at:**
-```bash
-/var/log/syslog
-```
-
-# Postman
-
-`variables created/stored in "Environments" in postman can be passed into fields using {{}}`
-```sh
-Client ID: {{google_client_id}}
-Client Secret: {{google_client_secret}}
-```
-
-
-# Misc.
-
-```bash
-grep nri // <-- 
-```
-
-`To get a list of all listening TCP ports using lsof`
-```bash
-sudo lsof -nP -iTCP -sTCP:LISTEN
-```
-
-`using ss tool (formerly netstat) to list all open ports`
-```bash
-ss -tulpn
-```
-
-# Tree
-
-`tree [OPTIONS] [directory]` ("`.`" might not be necessary)
-`List folder structure only directories from current directory`
-```sh
-tree -d .
-```
-
-`List folder structure only directors at depth 1`
-```sh
-tree -d -L 1 .
-```
-
-`List folder structure and all hidden files`
-```sh
-tree -a .
-```
-
-# Ubuntu
-`check Ubuntu version`
-```sh
-lsb_release -a
-```
-
-`search for software to install` `<application>`
-```sh
-sudo apt search <audacity>
-```
-
-`install from cli`
-```sh
-sudo apt install audacity
-```
-
-`killall <-- terminates process`
-```sh
-killall <snap-store>
-```
-
-# Oh My ZSH!
-
-`runs zsh powerlvl10k setup (prompt styling)`
-```sh
-p10k configure
-```
-
-# Windows
-
-`inside file explorer:`
-```C#
-ctrl + l // focus address bar
-cmd      // enter cmd to open cmd in this location
-```
-
-# Command Prompt
-
-`display directory contents`
-```C#
-dir // <<-- windows/cmd version of `ls`
-```
-# Powershell
-
-`find windows IPs`
-```powershell
-ipconfig
-```
-
-`find WSL IPs`
-```powershell
-wsl hostname -i
-wsl hostname -I
-```
-
-`open Visual Studio IDE latest version`
-```powershell
-start devenv
-```
-
-`open Visual Studio IDE specific solution (folder or file)`
-```powershell
-start devenv solution1.sln # file extension? solution?
-# because I have multiple VS installed on my machine, i need to include the entier absolute path to the executable in order to run from CLI
-```
-
-`open current folder in windows explorer`
-```powershell
-ii . # <<-- alias Invoke-item
-```
-
-`create a new file`
-```powershell
-New-Item example.txt
-```
-
-`delete recursive rm -rf`
-```C#
-Remove-Item -Recurse -Force <path>
-```
-# .NET
-
-`restore nuget packages`
-```C#
-dotnet restore
-```
-
-`run C# program.cs (entry point)`
-```powershell
-dotnet run
-```
-
-`create new console app .NET`
-```powershell
-dotnet new console -o ./CsharpProjects/TestProject
-# pass `--use-program-main` for Program Class template
-```
-
-**(VSCODE)**
-`generate assets for build and debug`
-```C#
-ctrl + shift + p // cmd pallette
-// enter ".net: g"
-// select ".NET: Generate Assets for Build and Debug"
-```
-should see this:
-![[Pasted image 20231121161946.png]]
-# Visual Studio
+# II. Visual Studio
 
 `run application`
 ```sh
@@ -739,6 +429,388 @@ do # press tab twice
 ```sh
 ctrl + k, ctrl + x
 # for example, surround With or e.g. Wrap {} w/ braces
+```
+
+---
+---
+
+# TERMINAL
+
+---
+---
+
+# III. Bash
+`following are bash specific`
+
+**EXPLORER WINDOWS FILE SYSTEM**
+`open windows file explorer GUI for WSL`
+```sh
+explorer.exe .
+```
+##### How to `echo` or `cat` write to a file with Bash:
+```bash
+cat >> /path/to/existingFile.text<< EOF
+some text line 1
+some text line 2
+some text line 3
+EOF
+```
+switch `cat >>` to `cat >` to create a file instead of append
+```bash
+cat > /path/to/newFile.text<< EOF
+some text line 1
+some text line 2
+some text line 3
+EOF
+```
+
+`(( expression ))` <-- this will execute/perform an expression
+
+`print BASH env`
+```sh
+printenv
+```
+
+`echo variables` (example how to access vars in BASH)
+```sh
+echo $LANG # <-- LANG env var (bash)
+```
+
+`$RANDOM in BASH will create a random number`
+```sh
+echo $RANDOM # <-- 22024 : between 0 and 32767
+```
+
+```sh
+I=0 # <-- passing this in the terminal will persist a var
+(( I++ )) # <-- I will now become 1 and persist
+# we don't need to prepend $ for vars in (( expression ))
+```
+
+`this will print expressions for (( expression )) operations`
+```sh
+help let
+```
+##### `View file "long" with permissions list`
+```sh
+ls -l
+```
+
+`-rw-r--r--` in front of the file indicates the permissions: **`r` = read, `w` = write, `x` = execute**
+**output:** `-rwxr-xr-x` <-- see **`x`** by 3 different "users" (all users can execute now)
+##### `Give executable permissions to a file`
+```sh
+chmod +x filename.whatever
+```
+
+`man` command is "manual" (like `help`)
+```sh
+man bash # <-- prints manual for bash
+man sleep # <-- prints manual for sleep (binary)
+```
+
+**`-e` flag needed for special characters**
+```sh
+echo -e "\n~~ Countdown Timer ~~\n"
+```
+
+`lists root of the file system`
+```sh
+ls /
+```
+_ls /bin will list all binaries on the file system. Bash lives here: #!/bin/bash which will use bash commands. we can access other binaries or libraries here_
+
+
+`lists bash commands`
+```sh
+help
+```
+
+`things we can pass to the bash TEST command (for testing true/false (for ifs or [[ EXPRESSIONS ]]))
+```sh
+help test
+```
+
+```sh
+( expression ) # <-- evaluates expression/returns value
+```
+
+```sh
+help [[ expression ]] # <-- output below
+```
+
+      ( EXPRESSION )    Returns the value of EXPRESSION
+      ! EXPRESSION              True if EXPRESSION is false; else false
+      EXPR1 && EXPR2    True if both EXPR1 and EXPR2 are true; else false
+      EXPR1 || EXPR2    True if either EXPR1 or EXPR2 is true; else false
+
+    When the `==' and `!=' operators are used, the string to the right of
+    the operator is used as a pattern and pattern matching is performed.
+    When the `=~' operator is used, the string to the right of the operator
+    is matched as a regular expression.  
+
+    The && and || operators do not evaluate EXPR2 if EXPR1 is sufficient to
+    determine the expression's value.
+
+    Exit Status:
+    Returns success if EXPR evaluates to true; fails if EXPR evaluates to
+    false or an invalid argument is given.
+
+**`we can evaluate any expression in the BASH terminal or .sh script:`**
+```sh
+[[ 4 -le 5 ]] # <-- `-le` === less-than-or-equal
+```
+
+`echo $?`
+```sh
+echo $? # <-- prints last bash command's EXIT STATUS
+0 # <-- 0 === true (0 === no errors)
+
+[[ 4 -ge 5 ]]
+echo $?
+1 # <-- 1 === false (> 0 === contains errors | "false")
+```
+
+```sh
+[[ 4 -ge 5 ]]; echo $? # <-- run multiple comands on single line with `;`
+1 # <-- output
+```
+
+**_we can think of `0` return as TRUE but it actually means `command had 0 errors`_** (***EXIT STATUS***)
+
+`check if a file exists (and output EXIT STATUS)` **`-a | -e`**
+_THIS WILL CHECK THE FOLDER FROM WHERE THE COMMAND WAS ENTERED_
+```sh
+[[ -a countdown.sh  ]]; echo $?
+0 # <-- output 0 if file exists
+```
+
+`to list all variables in BASH`
+```sh
+declare -p
+```
+
+
+`all variables: @ | *`
+```sh
+ARR=("a" "b" "c")
+echo ${ARR[@]}
+
+declare -p ARR 
+# --> declare -a ARR=([0]="a" [1]="b" [2]="c")
+# --> -a === array
+```
+
+`Read (capture user INPUT)`
+
+`capture user input`
+```sh
+read
+```
+
+### Debugging in Bash
+
+`set -x` _at the top of a script enables debugging (printing executed commands to the terminal)_
+```bash
+#!/bin/bash
+
+set -x
+
+# Your script goes here
+```
+
+# IV. Powershell
+
+`find windows IPs`
+```powershell
+ipconfig
+```
+
+`find WSL IPs`
+```powershell
+wsl hostname -i
+wsl hostname -I
+```
+
+`open Visual Studio IDE latest version`
+```powershell
+start devenv
+```
+
+`open Visual Studio IDE specific solution (folder or file)`
+```powershell
+start devenv solution1.sln # file extension? solution?
+# because I have multiple VS installed on my machine, i need to include the entier absolute path to the executable in order to run from CLI
+```
+
+`open current folder in windows explorer`
+```powershell
+ii . # <<-- alias Invoke-item
+```
+
+`create a new file`
+```powershell
+New-Item example.txt
+```
+
+`delete recursive rm -rf`
+```C#
+Remove-Item -Recurse -Force <path>
+```
+
+# V. Command Prompt
+
+`display directory contents`
+```C#
+dir // <<-- windows/cmd version of `ls`
+```
+
+# VI. Oh My ZSH!
+
+`runs zsh powerlvl10k setup (prompt styling)`
+```sh
+p10k configure
+```
+
+---
+---
+# FRAMEWORKS
+---
+---
+
+# VII. Node
+
+`find all running node processes`
+```
+ps -ef | grep node
+```
+
+`find node process by port`
+```
+lsof -i :3000
+```
+
+`kill process`
+```
+kill -9 PROCESS_ID 
+```
+# VIII. .NET
+
+`restore nuget packages`
+```C#
+dotnet restore
+```
+
+`run C# program.cs (entry point)`
+```powershell
+dotnet run
+```
+
+`create new console app .NET`
+```powershell
+dotnet new console -o ./CsharpProjects/TestProject
+# pass `--use-program-main` for Program Class template
+```
+
+**(VSCODE)**
+`generate assets for build and debug`
+```C#
+ctrl + shift + p // cmd pallette
+// enter ".net: g"
+// select ".NET: Generate Assets for Build and Debug"
+```
+should see this:
+![[Pasted image 20231121161946.png]]
+
+---
+---
+
+# OS
+
+---
+---
+
+# IX. Ubuntu
+`check Ubuntu version`
+```sh
+lsb_release -a
+```
+
+`search for software to install` `<application>`
+```sh
+sudo apt search <audacity>
+```
+
+`install from cli`
+```sh
+sudo apt install audacity
+```
+
+`killall <-- terminates process`
+```sh
+killall <snap-store>
+```
+
+# X. Windows
+
+`inside file explorer:`
+```C#
+ctrl + l // focus address bar
+cmd      // enter cmd to open cmd in this location
+```
+
+---
+---
+
+# Misc.
+
+---
+---
+
+# XI. CRON
+**For Ubuntu/Debian, you can find `cron`logs at:**
+```bash
+/var/log/syslog
+```
+
+# XII. Postman
+
+`variables created/stored in "Environments" in postman can be passed into fields using {{}}`
+```sh
+Client ID: {{google_client_id}}
+Client Secret: {{google_client_secret}}
+```
+
+```bash
+grep nri // <-- 
+```
+
+`To get a list of all listening TCP ports using lsof`
+```bash
+sudo lsof -nP -iTCP -sTCP:LISTEN
+```
+
+`using ss tool (formerly netstat) to list all open ports`
+```bash
+ss -tulpn
+```
+
+#  XII. Tree
+
+`tree [OPTIONS] [directory]` ("`.`" might not be necessary)
+`List folder structure only directories from current directory`
+```sh
+tree -d .
+```
+
+`List folder structure only directors at depth 1`
+```sh
+tree -d -L 1 .
+```
+
+`List folder structure and all hidden files`
+```sh
+tree -a .
 ```
 
 ---
