@@ -503,7 +503,7 @@ _ls /bin will list all binaries on the file system. Bash lives here: #!/bin/bash
 help
 ```
 
-`things we can pass to the bash TEST command (for testing true/false (for ifs or [[ EXPRESSIONS ]]))
+`things we can pass to the bash TEST command (for testing true/false (for ifs or [[ EXPRESSIONS ]]))`
 ```sh
 help test
 ```
