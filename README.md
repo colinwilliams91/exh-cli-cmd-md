@@ -28,7 +28,7 @@ search using the roman numeral indexed legend for system or technology lookup
 # :: IDE ::
 ---
 
-# I. VSCODE
+# I. VSCode
 `open file "side by side" (in new panel)`
 ```ts
 ctrl + \
@@ -363,7 +363,7 @@ ctrl + alt + j
 ```
 - `ctrl + click` on `var` or `type identifier` to open object definition, which will show all attributes and methods on datatype "constructor" parent object ("`struct`" in C#) (available methods)
 
-### CODE SNIPPETS (inside VS)
+### Code Snippets (inside VS)
 - enter these aliases inside your IDE text editor
 `Console.WriteLine()`
 ```sh
@@ -419,7 +419,7 @@ ctrl + k, ctrl + x
 # III. Bash
 `following are bash specific`
 
-**EXPLORER WINDOWS FILE SYSTEM**
+**Explorer Windows File System** (so helpful connecting sub-system partition to main OS)
 `open windows file explorer GUI for WSL`
 ```sh
 explorer.exe .
@@ -670,7 +670,7 @@ lsof -i :3000
 ```
 kill -9 PROCESS_ID 
 ```
-# VIII. .NET
+# VIII. .Net
 
 `restore nuget packages`
 ```C#
@@ -739,7 +739,7 @@ cmd      // enter cmd to open cmd in this location
 # :: Misc. ::
 ---
 
-# XI. CRON
+# XI. Cron
 **For Ubuntu/Debian, you can find `cron`logs at:**
 ```bash
 /var/log/syslog
