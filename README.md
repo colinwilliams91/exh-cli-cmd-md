@@ -695,8 +695,6 @@ ctrl + shift + p // cmd pallette
 // enter ".net: g"
 // select ".NET: Generate Assets for Build and Debug"
 ```
-should see this:
-![[Pasted image 20231121161946.png]]
 
 ---
 ---
