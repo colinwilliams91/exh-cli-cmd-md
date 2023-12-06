@@ -651,7 +651,7 @@ p10k configure
 
 ---
 ---
-# FRAMEWORKS
+# :: FRAMEWORKS ::
 ---
 
 # VII. Node
