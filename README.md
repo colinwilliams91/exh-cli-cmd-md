@@ -6,21 +6,21 @@ ctrl + f to search for the cli term you are looking for (annotated w/ keywords a
 search using the roman numeral indexed legend for system or technology lookup
 ```
 
-| Index | Technology     | System           |
-| :---: | -------------- | ---------------- |
-| I     | VSCode         | IDE              |
-| II    | Visual Studio  | IDE              |
-| III   | Bash           | Terminal         |
-| IV    | Powershell     | Terminal         |
-| V     | Command Prompt | Terminal         |
-| VI    | Oh My Zsh!     | Terminal         |
-| VII   | Node           | Framework        |
-| VIII  | .Net           | Framework        |
-| IX    | Ubuntu         | Operating System |
-| X     | Windows        | Operating System |
-| XI    | Cron           | Misc.            |
-| XII   | Postman        | Misc.            |
-| XIII  | Tree           | Misc.            |
+| Index | Technology         | System           |
+| :---: | ------------------ | ---------------- |
+| I     | Visual Studio Code | IDE              |
+| II    | Visual Studio      | IDE              |
+| III   | Bash               | Terminal         |
+| IV    | Powershell         | Terminal         |
+| V     | Command Prompt     | Terminal         |
+| VI    | Oh My Zsh!         | Terminal         |
+| VII   | Node               | Framework        |
+| VIII  | .Net               | Framework        |
+| IX    | Ubuntu             | Operating System |
+| X     | Windows            | Operating System |
+| XI    | Cron               | Misc.            |
+| XII   | Postman            | Misc.            |
+| XIII  | Tree               | Misc.            |
 
 ---
 ---
