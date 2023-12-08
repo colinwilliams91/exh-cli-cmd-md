@@ -727,8 +727,9 @@ killall <snap-store>
 
 `inside file explorer:`
 ```C#
-ctrl + l // focus address bar
-cmd      // enter cmd to open cmd in this location
+ctrl + l   // focus address bar
+cmd        // enter cmd to open cmd in this location
+powershell // open powershell in this location
 ```
 
 ---
