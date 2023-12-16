@@ -732,6 +732,12 @@ cmd        // enter cmd to open cmd in this location
 powershell // open powershell in this location
 ```
 
+`anywhere, but useful inside file explorer`
+`more options include copy path, open powershell here, open linux shell here`
+```C#
+shift + right-click // opens menu with more options
+```
+
 ---
 ---
 
