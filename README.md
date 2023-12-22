@@ -598,6 +598,12 @@ set -x
 
 # IV. Powershell
 
+`open persistent PS profile file`
+`will create new $PROFILE if not exists`
+```powershell
+code $PROFILE.AllUsersAllHosts
+```
+
 `find windows IPs`
 ```powershell
 ipconfig
