@@ -84,7 +84,7 @@ ctrl + shift + l
 ```
 
 ### SSL CERTS:
-"caddy" (server caddy) let's encrypt for free (replace nginx & certbot) 
+"caddy" (server caddy) let's encrypt for free (replace nginx & certbot)
 kubernetes --> ingress controller --> for free let's encrypt (replace nginx & certbot)
 
 **vscode**
@@ -198,7 +198,7 @@ help [[ expression ]] # <-- output below
     When the `==' and `!=' operators are used, the string to the right of
     the operator is used as a pattern and pattern matching is performed.
     When the `=~' operator is used, the string to the right of the operator
-    is matched as a regular expression.  
+    is matched as a regular expression.
 
     The && and || operators do not evaluate EXPR2 if EXPR1 is sufficient to
     determine the expression's value.
@@ -247,7 +247,7 @@ declare -p
 ARR=("a" "b" "c")
 echo ${ARR[@]}
 
-declare -p ARR 
+declare -p ARR
 # --> declare -a ARR=([0]="a" [1]="b" [2]="c")
 # --> -a === array
 ```
@@ -267,7 +267,7 @@ lsof -i :3000
 
 `kill process`
 ```
-kill -9 PROCESS_ID 
+kill -9 PROCESS_ID
 ```
 ### Read (capture user INPUT)
 
@@ -305,7 +305,7 @@ Client Secret: {{google_client_secret}}
 # Misc.
 
 ```bash
-grep nri // <-- 
+grep nri // <--
 ```
 
 ##### `To get a list of all listening TCP ports using lsof`
@@ -379,6 +379,12 @@ cmd      // enter cmd to open cmd in this location
 dir // <<-- windows/cmd version of `ls`
 ```
 # Powershell
+
+`open persistent PS profile file`
+`will create new $PROFILE if not exists`
+```powershell
+code $PROFILE.AllUsersAllHosts
+```
 
 `find windows IPs`
 ```powershell
@@ -487,7 +493,7 @@ alt + 2 // <<-- shows where used
 /// <summary>
 /// Comment goes here
 /// </summary>
-/// 
+///
 ```
 ### Create
 `create a new file in project`
@@ -666,7 +672,7 @@ ctrl + d
 
 `alternate copyLinesDown option`
 ```sh
-# without any selection 
+# without any selection
 ctrl + e
 ctrl + v
 alt + up/down # <<-- to move
@@ -679,7 +685,7 @@ httpenv.json.user
 
 `auto fix suggestions`
 ```sh
-alt + enter 
+alt + enter
 ```
 
 `compile/build application` show error/warning outputs
