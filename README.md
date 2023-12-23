@@ -604,6 +604,12 @@ set -x
 code $PROFILE.AllUsersAllHosts
 ```
 
+`put this inside your $PROFILE.ps1`
+`opens specified dir on shell launch`
+```powershell
+Set-Location C:\Users\User\Dev
+```
+
 `find windows IPs`
 ```powershell
 ipconfig
