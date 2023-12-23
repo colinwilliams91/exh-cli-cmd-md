@@ -598,6 +598,11 @@ set -x
 
 # IV. Powershell
 
+`get powershell version`
+```powershell
+$PSVersionTable.PSVersion
+```
+
 `open persistent PS profile file`
 `will create new $PROFILE if not exists`
 ```powershell
