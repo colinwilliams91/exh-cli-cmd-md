@@ -603,10 +603,32 @@ set -x
 
 # IV. Powershell
 
+`get powershell version`
+```powershell
+$PSVersionTable.PSVersion
+```
+
 `open persistent PS profile file`
 `will create new $PROFILE if not exists`
 ```powershell
 code $PROFILE.AllUsersAllHosts
+```
+
+`put this inside your $PROFILE.ps1`
+`opens specified dir on shell launch`
+```powershell
+Set-Location C:\Users\User\Dev
+```
+
+`to Set-Alias that takes params`
+```powershell
+function ListAll { # script block/fn
+    Get-ChildItem -Force
+}
+
+Set-Alias ls-a ListAll # create Alias/invoke
+# Set-Alias -Name list -Value cmdlet/fn
+# this above syntax only works for no params
 ```
 
 `find windows IPs`
