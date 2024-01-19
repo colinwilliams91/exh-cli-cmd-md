@@ -251,6 +251,11 @@ ctrl + m, ctrl + m
 ctrl + h
 ```
 
+`replace all occurrences`
+```sh
+alt + a # once you have entered what you would like to sub
+```
+
 `delete to...`
 ```sh
 ctrl + delete # delete to start of word
