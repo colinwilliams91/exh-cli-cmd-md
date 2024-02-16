@@ -758,6 +758,13 @@ killall <snap-store>
 
 # X. Windows
 
+`dumbest windows shortcut ever`
+`switch entire windows dekstop`
+```C#
+ctrl + win + right // next (new)
+ctrl + win + left // prev (all old)
+```
+
 `inside file explorer:`
 ```C#
 ctrl + l   // focus address bar
