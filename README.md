@@ -235,6 +235,11 @@ ctrl + d # go to next (highlighted selection)
 ctrl + t # backspace to clear out "symbol"
 ```
 
+`navigate back to prev window`
+```sh
+ctrl + -
+```
+
 `find closing brace`
 ```sh
 ctrl + ]
