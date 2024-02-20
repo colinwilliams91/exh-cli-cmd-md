@@ -217,6 +217,11 @@ ctrl + / + rightArrow # Edit.LineEnd
 ctrl + click // highlighted class
 ```
 
+`search file name`
+```sh
+ctrl + , # type name of file to find
+```
+
 `Go To`
 ```sh
 ctrl + g # go to line
