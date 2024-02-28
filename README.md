@@ -652,6 +652,11 @@ wsl hostname -i
 wsl hostname -I
 ```
 
+`Rename directory (like bash mv)`
+```powershell
+Rename-Item "D:\temp\Test Test1"
+```
+
 `open Visual Studio IDE latest version`
 ```powershell
 start devenv
