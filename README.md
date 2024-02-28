@@ -89,6 +89,13 @@ ctrl + k, v # ctrl + k, then release, press v
 ctrl + k, m # release ctrl + k, then press m
 ```
 
+`go to line #`
+```ts
+ctrl + shift + p
+:# 
+// backspace the > then :number
+```
+
 `navigate history (tabs?)`
 ```sh
 ctrl + tab
