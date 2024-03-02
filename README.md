@@ -432,6 +432,14 @@ ctrl + k, ctrl + x
 # for example, surround With or e.g. Wrap {} w/ braces
 ```
 
+### Unity in VS
+
+`view Unity Project Explorer`
+```c#
+alt + shift + e
+// filters sln/proj to unity files
+```
+
 ---
 ---
 
