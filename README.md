@@ -630,7 +630,7 @@ set -x
 
 `list all running processes w/ binary program names`
 ```powershell
-netstat -ba
+netstat -ba # will require elevated perm
 netstat -ban # this will also show IPs
 ```
 
