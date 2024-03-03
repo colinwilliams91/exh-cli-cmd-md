@@ -628,6 +628,12 @@ set -x
 
 # IV. Powershell
 
+`list all running processes w/ binary program names`
+```powershell
+netstat -ba
+netstat -ban # this will also show IPs
+```
+
 `get powershell version`
 ```powershell
 $PSVersionTable.PSVersion
