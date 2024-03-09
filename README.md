@@ -54,6 +54,14 @@ ctrl + `
 ctrl + shift + g
 ```
 
+`check for changed settings`
+```ts
+ctrl + shift + p // cmd palette
+// search by "@modified"
+// this will filter only settings
+// you have made changes to
+```
+
 `inside terminal to do "reverse lookup history" (commands entered)`
 ```ts
 ctrl + r
