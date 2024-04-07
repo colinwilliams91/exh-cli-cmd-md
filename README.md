@@ -724,6 +724,12 @@ Remove-Item -Recurse -Force <path>
 dir // <<-- windows/cmd version of `ls`
 ```
 
+`initiate reboot ("windows terminal")`
+```cmd
+shutdown /r /t 0
+(this might only work in windows terminal)
+```
+
 # VI. Oh My ZSH!
 
 `runs zsh powerlvl10k setup (prompt styling)`
