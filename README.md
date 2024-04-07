@@ -121,6 +121,11 @@ ctrl + g
 ctrl + shift + l
 ```
 
+`replace all occurrences in the open file`
+```typescript
+ctrl + h
+```
+
 `ctrl + K + M` --> "change language mode" --> JSON to format JSON stringified object grabbed from browser
 
 # II. Visual Studio
