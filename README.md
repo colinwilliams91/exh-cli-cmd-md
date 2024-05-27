@@ -21,6 +21,7 @@ search using the roman numeral indexed legend for system or technology lookup
 | XI    | Cron               | Misc.            |
 | XII   | Postman            | Misc.            |
 | XIII  | Tree               | Misc.            |
+| XIV   | Git                | Misc.            |
 
 ---
 ---
@@ -884,6 +885,19 @@ tree -d -L 1 .
 ```sh
 tree -a .
 ```
+
+# XIV. Git
+`if you have changes on your remote that you didn't mean to track:`
+`add dir and/or files to .gitignore`
+`then use this command to remove from the index (the actual location in <baseOfRepo>/.git/index which is your staging area)`
+```bash
+git rm --cached put/here/your/file.ext # for files
+git rm --cached folder/\* # for directory of files
+# append --dry-run # to see what will happen w/o executing
+git push ... # to update removal and untrack to remote
+```
+`CAUTION: i have only used this on auto-generated files, so i safely know they will be recreated locally upon deletion...`
+`proceed with caution by backing up files if this is not the case for you...`
 
 ---
 
