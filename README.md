@@ -777,6 +777,11 @@ dotnet new console -o ./CsharpProjects/TestProject
 # pass `--use-program-main` for Program Class template
 ```
 
+`push package to nuget.org`
+```C#
+dotnet nuget push <.\path\to\packed.1.0.0.nupkg> --api-key <abcdef12345> --source https://api.nuget.org/v3/index.json
+```
+
 **(VSCODE)**
 `generate assets for build and debug`
 ```C#
