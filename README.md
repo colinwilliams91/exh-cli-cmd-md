@@ -887,6 +887,27 @@ tree -a .
 ```
 
 # XIV. Git
+`tagging commits, usually for release`
+```bash
+git tag -l # the -l (list) flag is opt
+# lists all current tags
+git tag v1.0.0 2261e84e
+# tags a commit by sha
+git tag v1.0.1
+# tags your current commit
+git tag -a v1.0.2 -m "annotate this tag"
+# -a flag for annotate -m for message
+
+git show v1.0.0
+# this will show associated commit
+
+git log --pretty=oneline
+# shows all commits pretty
+
+git push origin --tags
+# this will push all tags that aren't already on the remote up
+```
+
 `if you have changes on your remote that you didn't mean to track:`
 `add dir and/or files to .gitignore`
 `then use this command to remove from the index (the actual location in <baseOfRepo>/.git/index which is your staging area)`
