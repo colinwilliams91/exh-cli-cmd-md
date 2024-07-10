@@ -642,6 +642,32 @@ set -x
 
 # IV. Powershell
 
+`run cmd prompt in pshell`
+```C#
+cmd  // starts cmd prompt in window
+exit // returns to pshell in window
+```
+
+```
+run "external commands" like .bat or .cmd, executables (.exe) or non-native cmdlets and command-line tools (like in your PATH or full pathed)... 
+```
+`&` call operator
+```C#
+& notepad.exe
+& calc.exe
+
+& "C:\Path\To\SomeExecutable.exe"
+```
+
+`run single cmd prompt command in pshell`
+```C#
+cmd /c <command>
+// e.g.
+cmd /c dir // like ls
+cmd /c set # displays your system env
+cmd /c set > file_name.txt // like cat
+```
+
 `list all running processes w/ binary program names`
 ```powershell
 netstat -ba # will require elevated perm
