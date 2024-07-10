@@ -725,6 +725,16 @@ Remove-Item -Recurse -Force <path>
 dir // <<-- windows/cmd version of `ls`
 ```
 
+`display system env`
+```C#
+set
+```
+
+`write env to file`
+```C#
+set > file_name.txt
+```
+
 `initiate reboot ("windows terminal")`
 ```cmd
 shutdown /r /t 0
