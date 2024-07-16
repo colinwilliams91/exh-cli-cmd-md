@@ -752,6 +752,12 @@ ni example.txt -type file
 "overwrite stuff" > .\README.md
 ```
 
+`string literals vs evaluation`
+```powershell
+'Hello $ man' # doesn't evaluate special characters or anything
+"../blob/$Version" # $Version is evaluated as a variable expression
+```
+
 `delete recursive rm -rf`
 ```C#
 Remove-Item -Recurse -Force <path>
