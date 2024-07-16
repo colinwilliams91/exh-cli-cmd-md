@@ -744,12 +744,12 @@ ni example.txt -type file
 ```powershell
 "content to add" | add-content -path .\README.md
 # OR
-"content to add" > .\README.md
+"content to add" >> .\README.md
 ```
 
 `overwrite file contents`
 ```powershell
-"overwrite stuff" >> .\README.md
+"overwrite stuff" > .\README.md
 ```
 
 `delete recursive rm -rf`
