@@ -740,6 +740,18 @@ New-Item example.txt
 ni example.txt -type file
 ```
 
+`append to file`
+```powershell
+"content to add" | add-content -path .\README.md
+# OR
+"content to add" > .\README.md
+```
+
+`overwrite file contents`
+```powershell
+"overwrite stuff" >> .\README.md
+```
+
 `delete recursive rm -rf`
 ```C#
 Remove-Item -Recurse -Force <path>
