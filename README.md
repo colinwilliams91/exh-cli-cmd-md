@@ -737,6 +737,7 @@ ii . # <<-- alias Invoke-item
 `create a new file`
 ```powershell
 New-Item example.txt
+ni example.txt -type file
 ```
 
 `delete recursive rm -rf`
