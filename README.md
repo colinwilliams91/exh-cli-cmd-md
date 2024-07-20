@@ -763,6 +763,11 @@ ni example.txt -type file
 Remove-Item -Recurse -Force <path>
 ```
 
+`move item(s)`
+```powershell
+Move-Item -Path .\whatever\files -Destination .\destination -force
+```
+
 # V. Command Prompt
 
 `display directory contents`
