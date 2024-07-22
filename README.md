@@ -266,6 +266,11 @@ ctrl + -
 ctrl + ]
 ```
 
+`open toolbox`
+```sh
+ctrl + alt + x
+```
+
 `add cursor above/below`
 ```sh
 ctrl + alt + upArrow
