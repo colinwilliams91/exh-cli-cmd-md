@@ -129,6 +129,13 @@ ctrl + h
 
 `ctrl + K + M` --> "change language mode" --> JSON to format JSON stringified object grabbed from browser
 
+`JavaScript Console Debugging`
+```js
+console.log({object}) /* will print as console.log("object:": { ... }); */  
+  
+console.dir(object, {depth: null}) /* will print all of the data rather than compared to console.log which only returns top level, not nested data */
+```
+
 # II. Visual Studio
 
 `run application`
