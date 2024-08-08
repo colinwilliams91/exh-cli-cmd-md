@@ -780,6 +780,11 @@ Remove-Item -Recurse -Force <path>
 Move-Item -Path .\whatever\files -Destination .\destination -force
 ```
 
+`copy item(s) -recurse if folder`
+```powershell
+Copy-Item -Path .\the\files -Recurse -Destination .\the\destination -force
+```
+
 # V. Command Prompt
 
 `display directory contents`
