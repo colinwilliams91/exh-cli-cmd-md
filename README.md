@@ -35,6 +35,11 @@ search using the roman numeral indexed legend for system or technology lookup
 ctrl + shift + p
 ```
 
+`enable psehll integrated terminal enhancements (preferences settings json)`
+```ts
+"terminal.integrated.suggest.enabled": true
+```
+
 `Clear command suggestions for integrated terminal (for powershell can reduce time to activate shell from ~600ms -> ~50ms`
 ```ts
 ctrl + shift + p
