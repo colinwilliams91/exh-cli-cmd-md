@@ -1018,5 +1018,16 @@ git push ... # to update removal and untrack to remote
 `CAUTION: i have only used this on auto-generated files, so i safely know they will be recreated locally upon deletion...`
 `proceed with caution by backing up files if this is not the case for you...`
 
+`bring committed changes back to working directory (e.g. for committed files you want to stash that have not been pushed`
+```bash
+git reset HEAD~1 --soft
+```
+
+`show remote repo branches state compared with local branches`
+```bash
+# git remote show <remote alias>
+git remote show origin
+```
+
 ---
 
