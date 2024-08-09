@@ -922,6 +922,24 @@ killall <snap-store>
 
 # X. Windows
 
+`turn on/off windows features`
+```C#
+Control Panel > Programs > Programs and Features > Turn Windows featrures on or off
+```
+
+`telnet "allows connecting to other computers remotely"`
+```C#
+// In "Turn Windows features on or off"
+// ... check the Telnet box
+[x] Telnet
+```
+
+`Use Telnet to check the port`
+```powershell
+telnet <address> <port_number>
+telnet google.com 80
+```
+
 `dumbest windows shortcut ever`
 `switch entire windows dekstop`
 ```C#
