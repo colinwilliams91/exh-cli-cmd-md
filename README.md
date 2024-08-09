@@ -30,6 +30,17 @@ search using the roman numeral indexed legend for system or technology lookup
 ---
 
 # I. VSCode
+`command palette`
+```ts
+ctrl + shift + p
+```
+
+`Clear command suggestions for integrated terminal (for powershell can reduce time to activate shell from ~600ms -> ~50ms`
+```ts
+ctrl + shift + p
+Terminal: Clear Suggest Cache
+```
+
 `open file "side by side" (in new panel)`
 ```ts
 ctrl + \
