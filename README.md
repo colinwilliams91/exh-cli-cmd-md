@@ -670,6 +670,16 @@ set -x
 
 # IV. Powershell
 
+`get current path`
+```powershell
+(Get-Item .).FullName
+```
+
+`pipe to clipboard`
+```powershell
+(Get-Item .).FullName | Set-Clipboard
+```
+
 `run cmd prompt in pshell`
 ```C#
 cmd  // starts cmd prompt in window
@@ -1027,6 +1037,11 @@ git reset HEAD~1 --soft
 ```bash
 # git remote show <remote alias>
 git remote show origin
+```
+
+`git add --patch "hunks"`
+```bash
+git add -p # shows hunks diff in CLI
 ```
 
 ---
