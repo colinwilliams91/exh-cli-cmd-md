@@ -740,6 +740,12 @@ Set-Alias ls-a ListAll # create Alias/invoke
 # this above syntax only works for no params
 ```
 
+`start transcript of entire session to local file`
+```powershell
+Start-Transcript
+Stop-Transcript # stop when done
+```
+
 `find windows IPs`
 ```powershell
 ipconfig
