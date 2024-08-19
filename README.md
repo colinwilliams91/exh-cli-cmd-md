@@ -973,6 +973,16 @@ powershell // open powershell in this location
 shift + right-click // opens menu with more options
 ```
 
+### SSMS
+_until I have a better place to put this..._
+
+`fix SSMS won't see new objects/tables`
+```SQL
+Edit > Intellisense > Refresh Local Cache
+OR
+ctrl + shift + r
+```
+
 ---
 ---
 
