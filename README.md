@@ -742,9 +742,7 @@ Set-Alias ls-a ListAll # create Alias/invoke
 
 `create a symbolic link shortcut to path`
 ```powershell
-```rust
 New-Item -itemtype symboliclink -Path "PathWhereYouWantToPutShortcut" -name "NameOfShortcut" -value "PathOfWhatYourTryingToLinkTo"
-```
 ```
 
 `start transcript of entire session to local file`
