@@ -8,20 +8,21 @@ search using the roman numeral indexed legend for system or technology lookup
 
 | Index | Technology         | System           |
 | :---: | ------------------ | ---------------- |
-| I     | Visual Studio Code | IDE              |
-| II    | Visual Studio      | IDE              |
-| III   | Bash               | Terminal         |
-| IV    | Powershell         | Terminal         |
-| V     | Command Prompt     | Terminal         |
-| VI    | Oh My Zsh!         | Terminal         |
-| VII   | Node               | Framework        |
+|   I   | Visual Studio Code | IDE              |
+|  II   | Visual Studio      | IDE              |
+|  III  | Bash               | Terminal         |
+|  IV   | Powershell         | Terminal         |
+|   V   | Command Prompt     | Terminal         |
+|  VI   | Oh My Zsh!         | Terminal         |
+|  VII  | Node               | Framework        |
 | VIII  | .Net               | Framework        |
-| IX    | Ubuntu             | Operating System |
-| X     | Windows            | Operating System |
-| XI    | Cron               | Misc.            |
-| XII   | Postman            | Misc.            |
-| XIII  | Tree               | Misc.            |
-| XIV   | Git                | Misc.            |
+|  IX   | Ubuntu             | Operating System |
+|   X   | Windows            | Operating System |
+|  XI   | SQL                | DB               |
+|  XII  | Cron               | Misc.            |
+| XIII  | Postman            | Misc.            |
+|  XIV  | Tree               | Misc.            |
+|  XV   | Git                | Misc.            |
 
 ---
 ---
@@ -971,8 +972,13 @@ powershell // open powershell in this location
 shift + right-click // opens menu with more options
 ```
 
+---
+---
+
+# :: Misc. ::
+---
+
 ### SSMS
-_until I have a better place to put this..._
 
 `fix SSMS won't see new objects/tables`
 ```SQL
@@ -983,7 +989,6 @@ ctrl + shift + r
 
 ---
 ---
-
 # :: Misc. ::
 ---
 
