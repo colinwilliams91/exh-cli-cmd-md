@@ -974,10 +974,25 @@ shift + right-click // opens menu with more options
 
 ---
 ---
-
-# :: Misc. ::
+# :: Databases ::
 ---
 
+`SELF REFERENCING TABLE`
+```SQL
+SELECT a.something, b.other
+FROM mytable a, mytable b
+WHERE a.sometest val ...
+AND b.othertest val...
+```
+
+`WHEN to clean up CURSOR`
+```SQL
+IF CURSOR_STATUS('local', 'X') >= -1
+BEGIN
+    CLOSE X;
+    DEALLOCATE X
+END;
+```
 ### SSMS
 
 `fix SSMS won't see new objects/tables`
