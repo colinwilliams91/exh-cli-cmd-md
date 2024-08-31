@@ -840,6 +840,12 @@ set
 set > file_name.txt
 ```
 
+`pipe to clipboard`
+```C#
+// ... | clip
+where pip3 | clip
+```
+
 `initiate reboot ("windows terminal")`
 ```cmd
 shutdown /r /t 0
