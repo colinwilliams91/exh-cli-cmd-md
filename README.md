@@ -982,6 +982,7 @@ shift + right-click // opens menu with more options
 ---
 # :: Databases ::
 ---
+### MS SQL Server
 
 `SELF REFERENCING TABLE`
 ```SQL
@@ -998,6 +999,14 @@ BEGIN
     CLOSE X;
     DEALLOCATE X
 END;
+```
+
+`list all schemas in DB`
+```SQL
+SELECT name FROM sys.schemas
+-- dbo -> [dbo].table
+-- lu  -> [lu].table
+-- etc
 ```
 ### SSMS
 
