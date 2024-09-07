@@ -41,6 +41,13 @@ ctrl + shift + p
 "terminal.integrated.suggest.enabled": true
 ```
 
+`ScreenCast Mode (great for presentations)`
+```ts
+ctrl + shift + p
+// type "screencast"
+// select Developer Toggle Screencast Mode
+```
+
 `Clear command suggestions for integrated terminal (for powershell can reduce time to activate shell from ~600ms -> ~50ms`
 ```ts
 ctrl + shift + p
