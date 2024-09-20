@@ -178,6 +178,16 @@ ctrl + shift + t
 ctrl + q # search commands keywords e.g: "new"
 ```
 
+`extract code snippet to new Method`
+```C#
+// highlight target code
+ctrl + r, ctrl + m
+// this will move the highlighted code to a new method with this signature:
+
+// private void NewMethod()
+// the targeted code will be the body of this new method
+```
+
 `multiline comment`
 ```sh
 shift + alt + a # multi line /* */
