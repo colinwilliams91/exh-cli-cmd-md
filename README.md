@@ -16,13 +16,14 @@ search using the roman numeral indexed legend for system or technology lookup
 |  VI   | Oh My Zsh!         | Terminal         |
 |  VII  | Node               | Framework        |
 | VIII  | .Net               | Framework        |
-|  IX   | Ubuntu             | Operating System |
-|   X   | Windows            | Operating System |
-|  XI   | SQL                | DB               |
-|  XII  | Cron               | Misc.            |
-| XIII  | Postman            | Misc.            |
-|  XIV  | Tree               | Misc.            |
-|  XV   | Git                | Misc.            |
+|  IX   | CSS                | Framework        |
+|   X   | Ubuntu             | Operating System |
+|  XI   | Windows            | Operating System |
+|  XII  | SQL                | DB               |
+| XIII  | Cron               | Misc.            |
+|  XIV  | Postman            | Misc.            |
+|  XV   | Tree               | Misc.            |
+|  XVI  | Git                | Misc.            |
 
 ---
 ---
@@ -931,6 +932,23 @@ dotnet nuget push <.\path\to\packed.1.0.0.nupkg> --api-key <abcdef12345> --sourc
 ctrl + shift + p // cmd pallette
 // enter ".net: g"
 // select ".NET: Generate Assets for Build and Debug"
+```
+
+`CSS Caching with ASP.NET`
+```html
+<!-- tick disable browser cache in browser dev tools... and/or... -->
+<!-- in html markup (razor or w/e framework working w/ .NET)... -->
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+<!-- asp-append-version="true" will append a new version ID to the css file that is compiled down... -->
+ <!-- ...this ensures proper caching on changes to source -->
+```
+
+# IX. CSS
+`copy css class declarations from web browser`
+```css
+/* When inspecting and adjusting CSS in browser dev tools... */
+/* ...highlight all class declarations you made... */
+/* ...right click and select "copy all declarations" */
 ```
 
 ---
