@@ -92,6 +92,11 @@ ctrl + shift + p // cmd palette
 ctrl + r
 ```
 
+`open/close sidebar`
+```ts
+ctrl + b
+```
+
 `goto/go to definition`
 ```
 fn + f12
