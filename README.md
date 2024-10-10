@@ -70,6 +70,11 @@ ctrl + enter
 ctrl + 0 // <<-- 1, 2, 3 etc.. == panels
 ```
 
+`search file explorer`
+```ts
+ctrl + p
+```
+
 `focus terminal`
 ```ts
 ctrl + `
