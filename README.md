@@ -323,6 +323,19 @@ ctrl + ]
 ctrl + alt + x
 ```
 
+`multi cursor edit (also in Edit menu)`
+```C#
+ctrl + alt + click // add 2nd caret
+ctrl + alt + dbl-click // add 2nd word selection
+ctrl + alt + click + drag // add 2nd selection
+shift + alt + . // add next matching text
+shift + alt + ; // add all matching text
+shift + alt + , // rm last selected occurence
+shift + alt + / // skip next matching occurence
+alt + click // add a box selection
+esc OR click // clear all selections
+```
+
 `add cursor above/below`
 ```sh
 ctrl + alt + upArrow
