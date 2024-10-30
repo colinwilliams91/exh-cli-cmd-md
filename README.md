@@ -133,6 +133,11 @@ ctrl + k, v # ctrl + k, then release, press v
 ctrl + k, m # release ctrl + k, then press m
 ```
 
+`copy file relative path`
+```ts
+ctrl + k, ctrl + shift + c
+```
+
 `go to line #`
 ```ts
 ctrl + shift + p
@@ -1041,6 +1046,11 @@ shift + right-click // opens menu with more options
 # :: Databases ::
 ---
 ### MS SQL Server
+
+`FIND COLUMNT in DB`
+```SQL
+SELECT * FROM information_schema.columns WHERE column_name = 'My_Column'
+```
 
 `SELF REFERENCING TABLE`
 ```SQL
