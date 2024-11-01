@@ -184,6 +184,11 @@ ctrl + fn + f5 # <<-- default run
 fn + f5 # <<-- debug run (slower)
 ```
 
+`open breakpoints window`
+```C#
+ctrl + alt + b
+```
+
 `open terminal (View.Terminal) shortcut added`
 ```sh
 ctrl + shift + t
