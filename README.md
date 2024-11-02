@@ -481,11 +481,10 @@ httpenv.json.user
 alt + enter
 ```
 
-`compile/build application` show error/warning outputs
+`open Test Explorer`
 ```sh
-ctrl + shift + b
+ctrl + e, t
 ```
-
 ### Refactor
 `extract method`
 ```C#
