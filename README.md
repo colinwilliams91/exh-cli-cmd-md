@@ -184,6 +184,11 @@ ctrl + fn + f5 # <<-- default run
 fn + f5 # <<-- debug run (slower)
 ```
 
+`build project`
+```C#
+ctrl + shift + b
+```
+
 `open breakpoints window`
 ```C#
 ctrl + alt + b
