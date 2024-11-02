@@ -257,6 +257,13 @@ ctrl + shift + j, c // release then press c
 ctrl + shift + j, i // release then press i
 ```
 
+`link proj dependencies, link proj as reference`
+```C#
+cd \IntoProj
+dotnet add reference ..\ParentProj\Proj.csproj
+// find the .csproj level to link
+```
+
 `format`
 ```sh
 ctrl + k, ctrl + d # formats entire DOCUMENT (d = doc)
