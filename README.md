@@ -485,6 +485,13 @@ alt + enter
 ```sh
 ctrl + e, t
 ```
+
+`run tests`
+```C#
+ctrl + r, t // runs selectred
+ctrl + r, a // runs all tests
+ctrl + r, l // "repeat last run"
+```
 ### Refactor
 `extract method`
 ```C#
