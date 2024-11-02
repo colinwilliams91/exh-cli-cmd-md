@@ -262,6 +262,13 @@ ctrl + shift + j, i // release then press i
 cd \IntoProj
 dotnet add reference ..\ParentProj\Proj.csproj
 // find the .csproj level to link
+// requires dotnet sln command to be complete..
+```
+
+`link VS solution files dotnet sln`
+```C#
+cd .. // cd to root or whatever .sln level you want to link to
+dotnet sln add YourProj\WithSolution.csproj
 ```
 
 `format`
