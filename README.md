@@ -1216,5 +1216,10 @@ git remote show origin
 git add -p # shows hunks diff in CLI
 ```
 
+`tool for giff from all commits on current branch`
+```shell
+gitk --all
+```
+
 ---
 
