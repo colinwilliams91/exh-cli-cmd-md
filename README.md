@@ -1205,6 +1205,12 @@ git push ... # to update removal and untrack to remote
 git reset HEAD~1 --soft
 ```
 
+`probably best reset option. discard 2 of 3 git areas`
+```bash
+git reset --mixed
+# discards commit and staged changes (in the git index) but KEEPS changes in your working dir (files in IDE)
+```
+
 `show remote repo branches state compared with local branches`
 ```bash
 # git remote show <remote alias>
@@ -1219,6 +1225,17 @@ git add -p # shows hunks diff in CLI
 `tool for giff from all commits on current branch`
 ```shell
 gitk --all
+```
+
+`switch to FILE and discard changes (destructive)`
+```bash
+git restore
+```
+
+`move between branches (replaces checkout) doesn't discard changes`
+```bash
+git switch # only takes branch as arg
+# checkout is for switching tags and commits
 ```
 
 ---
