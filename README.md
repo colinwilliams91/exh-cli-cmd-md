@@ -1237,6 +1237,14 @@ git restore
 git switch # only takes branch as arg
 # checkout is for switching tags and commits
 ```
+#### Rebase
+`how to proceed in interactive rebase`
+```bash
+# git rebase -i or something
+# once you decide the strategy for rebasing (specific files squash, pick, reword, etc)
+# then how to continue after handling merge conflicts and whatnot
+git add README.txt && git rebase --continue
+```
 
 ---
 
