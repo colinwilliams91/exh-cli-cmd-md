@@ -1188,6 +1188,15 @@ git push origin --tags
 # this will push all tags that aren't already on the remote up
 ```
 
+`using the git stash stack`
+```sh
+git stash # puts all workind dir changes on top of stash stack
+git stash apply # brings back that level of the stack into working dir (un staged)
+git stash pop # same as apply except "pops" that level off the stack (dropping it)
+git stash drop # removes the top level of the stack
+git stash list # shows the entire stack, the newest is always the lowest number
+```
+
 `if you have changes on your remote that you didn't mean to track:`
 `add dir and/or files to .gitignore`
 `then use this command to remove from the index (the actual location in <baseOfRepo>/.git/index which is your staging area)`
@@ -1248,3 +1257,4 @@ git add README.txt && git rebase --continue
 
 ---
 
+Erratic Distortion Lost & Found
