@@ -1199,6 +1199,17 @@ git stash apply # brings back that level of the stack into working dir (un stage
 git stash pop # same as apply except "pops" that level off the stack (dropping it)
 git stash drop # removes the top level of the stack
 git stash list # shows the entire stack, the newest is always the lowest number
+
+git stash -u # same as git stash --include-untracked
+# will include more than just modified and staged
+git stash --all # similar to -u ?
+
+git stash --patch # stash hunk at a time
+```
+
+`git status`
+```sh
+git status -s # short output
 ```
 
 `if you have changes on your remote that you didn't mean to track:`
