@@ -734,6 +734,10 @@ declare -p ARR
 read
 ```
 
+`Return IP address of Windows Machine as seen from WSL VM`
+```sh
+ip route show | grep -i default | awk '{ print $3}'
+```
 ### Debugging in Bash
 
 `set -x` _at the top of a script enables debugging (printing executed commands to the terminal)_
