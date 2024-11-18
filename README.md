@@ -903,6 +903,11 @@ Move-Item -Path .\whatever\files -Destination .\destination -force
 Copy-Item -Path .\the\files -Recurse -Destination .\the\destination -force
 ```
 
+`return the IP addr of the WSL (linux distro) VM`
+```powershell
+wsl hostname -I
+```
+
 # V. Command Prompt
 
 `display directory contents`
