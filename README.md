@@ -104,8 +104,8 @@ ctrl + b
 ```
 
 `goto/go to definition`
-```
-fn + f12
+```ts
+fn + f12 // or ctrl + left click
 ```
 
 `goto/go to references`
@@ -1276,5 +1276,3 @@ git add README.txt && git rebase --continue
 ```
 
 ---
-
-Erratic Distortion Lost & Found
