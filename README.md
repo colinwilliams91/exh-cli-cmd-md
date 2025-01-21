@@ -1099,6 +1099,11 @@ WHERE a.sometest val ...
 AND b.othertest val...
 ```
 
+`Find SQL Server Version T-SQL`
+```SQL
+SELECT @@VERSION
+```
+
 `WHEN to clean up CURSOR`
 ```SQL
 IF CURSOR_STATUS('local', 'X') >= -1
