@@ -1104,6 +1104,27 @@ AND b.othertest val...
 SELECT @@VERSION
 ```
 
+`Find Table Constraints`
+```SQL
+SELECT * FROM INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE
+WHERE TABLE_NAME = 'Your_Table'
+```
+
+`Find Tables Indexes`
+```SQL
+SELECT
+	OBJECT_SCHEMA_NAME(object_id) AS SchemaName,
+	OBJECT_NAME(object_id) AS TableName,
+	name AS IndexName,
+	type_desc AS IndexType
+FROM
+	sys.indexes
+WHERE
+	OBJECT_SCHEMA_NAME(object_id) <> 'sys' -- Filter, this can be replaced with OBJECT_NAME(object_id) = 'Your_Table' to target one table
+ORDER BY
+	SchemaName, TableName, IndexName;
+```
+
 `WHEN to clean up CURSOR`
 ```SQL
 IF CURSOR_STATUS('local', 'X') >= -1
