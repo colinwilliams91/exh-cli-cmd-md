@@ -1141,6 +1141,15 @@ SELECT name FROM sys.schemas
 -- lu  -> [lu].table
 -- etc
 ```
+
+`Find most recent backups on SQL Server Linux Instance`
+```SQL
+SELECT a.backup_set_id, a.server_name, a.database_name, a.name, a.user_name, a.position, a.software_major_version, a.backup_start_date, backup_finish_date, a.backup_size, a.recovery_model, b.physical_device_name
+FROM msdb.dbo.backupset a join msdb.dbo.backupmediafamily b
+	ON a.media_set_id = b.media_set_id
+WHERE a.database_name = 'YOUR_DB'
+ORDER BY a.backup_finish_date DESC
+```
 ### SSMS
 
 `fix SSMS won't see new objects/tables`
@@ -1148,6 +1157,11 @@ SELECT name FROM sys.schemas
 Edit > Intellisense > Refresh Local Cache
 OR
 ctrl + shift + r
+```
+
+`backup db`
+```SQL
+Object Explorer > Right click Database > Tasks > Back Up...
 ```
 
 ---
