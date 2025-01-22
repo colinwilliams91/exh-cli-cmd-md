@@ -1159,11 +1159,16 @@ OR
 ctrl + shift + r
 ```
 
-`backup db`
+`backup db (this stays on the SQL Server instance)`
 ```SQL
 Object Explorer > Right click Database > Tasks > Back Up...
 ```
 
+`make bacpac (movable dev copy) of db (can move to disk)`
+```SQL
+Object Explorer > Right click Database > Tasks > Export Data Tier Application
+-- choose local drive
+```
 ---
 ---
 # :: Misc. ::
