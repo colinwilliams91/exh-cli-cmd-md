@@ -1150,6 +1150,17 @@ FROM msdb.dbo.backupset a join msdb.dbo.backupmediafamily b
 WHERE a.database_name = 'YOUR_DB'
 ORDER BY a.backup_finish_date DESC
 ```
+
+`Select * rows by distinct COLUMN (ROW_NUMBER() window function that will int++ each PARTITION`
+```SQL
+SELECT *
+	FROM (
+		SELECT *, -- select ALL and...
+			ROW_NUMBER() OVER (PARTITION BY [ColForDistinct] ORDER BY [AnyCol]) AS ROW_NUMBER -- each partition will reset on next DISTINCT
+		FROM [YourTable]
+	) AS ROWS
+WHERE ROW_NUMBER = 1 -- ensures only 1 per PARTITION
+```
 ### SSMS
 
 `fix SSMS won't see new objects/tables`
