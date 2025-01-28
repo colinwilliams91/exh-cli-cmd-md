@@ -1161,6 +1161,17 @@ SELECT *
 	) AS ROWS
 WHERE ROW_NUMBER = 1 -- ensures only 1 per PARTITION
 ```
+
+`Find COLUMN NAME LIKE whole DB` (search part of col)
+```SQL
+SELECT c.name AS 'ColumnName',
+		(SCHEMA_NAME(t.schema_id) + '.' + t.name) AS 'TableName'
+FROM sys.columns c
+JOIN sys.tables t ON c.object_id = t.object_id
+WHERE c.name LIKE '%Keyword%' -- your search keyword
+ORDER BY TableName,
+		ColumnName;
+```
 ### SSMS
 
 `fix SSMS won't see new objects/tables`
