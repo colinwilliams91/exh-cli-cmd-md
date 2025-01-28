@@ -42,6 +42,17 @@ ctrl + shift + p
 ctrl + K, ctrl + Q
 ```
 
+`Jump to Symbols (objects)`
+```TS
+ctrl + p @ ... // search in file
+ctrl + p # ... // search in workspace
+```
+
+`Fuzzy search workspace` (like SQL LIKE %)
+```TS
+ctrl + p % ... // searches by char/string in realtime
+```
+
 `enable psehll integrated terminal enhancements (preferences settings json)`
 ```ts
 "terminal.integrated.suggest.enabled": true
