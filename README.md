@@ -37,6 +37,11 @@ search using the roman numeral indexed legend for system or technology lookup
 ctrl + shift + p
 ```
 
+`Go to last Edit`
+```TS
+ctrl + K, ctrl + Q
+```
+
 `enable psehll integrated terminal enhancements (preferences settings json)`
 ```ts
 "terminal.integrated.suggest.enabled": true
