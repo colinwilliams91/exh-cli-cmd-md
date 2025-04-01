@@ -1188,6 +1188,33 @@ WHERE c.name LIKE '%Keyword%' -- your search keyword
 ORDER BY TableName,
 		ColumnName;
 ```
+
+`Search ALL TABLEs, ALL COLUMNS for row that contains search_term`
+```SQL
+DECALRE @SearchTerm NVARCHAR(255) = 'your_search_term';
+DECLARE @TableName NVARCHAR(255);
+DECLARE @ColumnName NVARCHAR(255);
+DECLARE @SQL NVARCHAR(MAX);
+
+DECLARE TableCursor CURSOR FOR
+SELECT TABLE_NAME, COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE DATA_TYPE IN ('char', 'varchar', 'text', 'nchar', 'nvarchar', 'ntext');
+
+OPEN TableCursor;
+FETCH NEXT FROM TableCursor INTO @TableName, @ColumnName;
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+	SET @SQL = 'IF EXISTS (SELECT 1 FROM ' + @TableName + 'WHERE ' + @ColumnName + ' LIKE ''%' + @SearchTerm + '%'') ' + 'PRINT ''' + @TableName + '.' + @ColumnName + '''';
+	EXEC sp_executesql @SQL;
+
+	FETCH NEXT FROM TableCursor INTO @TableName, @ColumnName;
+END;
+
+CLOSE TableCursor;
+DEALLOCATE TableCursor;
+```
 ### SSMS
 
 `fix SSMS won't see new objects/tables`
