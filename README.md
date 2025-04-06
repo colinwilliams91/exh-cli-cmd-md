@@ -1390,6 +1390,34 @@ git add README.txt && git rebase --continue
 git cat-file < -e | -p > hash
 # -e will emit zero status if object exists and non-zero if object is invalid
 # -p will print decoded contents in pretty human readable format
+
+git cat-file -t hash # prints the git object type
+# e.g. "tree" or "commit"
+
+git cat-file -s hash # prints the size of the git object
+# e.g. 34
+```
+
+`how to get git objects to read`
+```sh
+git log --oneline
+# d4d8373 (HEAD -> main, origin/main) commit msg
+git cat-file -p d4d8373
+# tree 75e196aa96922bb8077c3d3b92621696c109e76f
+# author Colin Williams <colin.williams.dev@gmail.com> 1743921108 -0500
+# committer Colin Williams <colin.williams.dev@gmail.com> 1743921108 -0500
+
+# commit msg
+git cat-file -p 75e196aa96922bb8077c3d3b92621696c109e76f
+# 040000 tree a232127dbaf14b5532426c58551c092e9a1d347b    .github
+# the hash i passed as the arg is the tree hash
+# .github is the dir i made in this commit
+# we can trace the a23212.. commit, and keep getting tree hashes until we get a "blob" hash which is the changed file
+# cat-file that hash and we see the literal file contents at the time of the commit
+# *bonus* no filename, path or metadata will exist in the blob, that data only exists in the tree object
+# (that data is inferred by the location of the object which derrives its hash via SHA-1)
+
+
 ```
 
 ---
