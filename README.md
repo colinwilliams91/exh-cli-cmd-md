@@ -1384,5 +1384,12 @@ git switch # only takes branch as arg
 # then how to continue after handling merge conflicts and whatnot
 git add README.txt && git rebase --continue
 ```
+#### Read git files
+`cat-file will decode git object blobs, binaries`
+```sh
+git cat-file < -e | -p > hash
+# -e will emit zero status if object exists and non-zero if object is invalid
+# -p will print decoded contents in pretty human readable format
+```
 
 ---
