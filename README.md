@@ -1417,7 +1417,6 @@ git cat-file -p 75e196aa96922bb8077c3d3b92621696c109e76f
 # *bonus* no filename, path or metadata will exist in the blob, that data only exists in the tree object
 # (that data is inferred by the location of the object which derrives its hash via SHA-1)
 
-
 ```
 
 ---
