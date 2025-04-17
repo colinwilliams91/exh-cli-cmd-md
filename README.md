@@ -1418,5 +1418,13 @@ git cat-file -p 75e196aa96922bb8077c3d3b92621696c109e76f
 # (that data is inferred by the location of the object which derrives its hash via SHA-1)
 
 ```
+`check out parent commit only for specific file`
+```sh
+git checkout <commit-hash>^ -- <file-path>
+# stages the "revision" diff
+# basically like staging a cherry picked "revert"
+# which you can test then decide to stage the revision (like an "undo")
+# or toss away the staged revision, resuming current functionality
+```
 
 ---
