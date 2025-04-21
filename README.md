@@ -1234,6 +1234,21 @@ Object Explorer > Right click Database > Tasks > Back Up...
 Object Explorer > Right click Database > Tasks > Export Data Tier Application
 -- choose local drive
 ```
+### ADS
+
+`launch sql profiler`
+```SQL
+alt + p
+-- OR right click on server and select Launch Profiler
+-- SELECT session template (Azure SQL DB only has Standard_OnPrem option)
+```
+
+`stop/restart sql profiler`
+```SQL
+alt + s
+-- THIS is a toggle, to restart press alt + s again
+```
+
 ---
 ---
 # :: Misc. ::
