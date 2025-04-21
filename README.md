@@ -1249,6 +1249,13 @@ alt + s
 -- THIS is a toggle, to restart press alt + s again
 ```
 
+`open a saved XEL (profiler) file`
+```SQL
+ctrl + shift + p (cmd palette)
+-- TYPE Profiler: Open XEL File, browse and select file
+-- THIS will open file in the viewer
+```
+
 ---
 ---
 # :: Misc. ::
