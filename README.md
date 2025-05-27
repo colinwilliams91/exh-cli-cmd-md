@@ -1035,7 +1035,7 @@ ctrl + shift + p // cmd pallette
 # :: Operating System ::
 ---
 
-# IX. Ubuntu
+# X. Ubuntu
 `check Ubuntu version`
 ```sh
 lsb_release -a
@@ -1056,7 +1056,7 @@ sudo apt install audacity
 killall <snap-store>
 ```
 
-# X. Windows
+# XI. Windows
 
 `turn on/off windows features`
 ```C#
@@ -1100,6 +1100,7 @@ shift + right-click // opens menu with more options
 ---
 # :: Databases ::
 ---
+# XII. SQL
 ### MS SQL Server
 
 `FIND COLUMNT in DB`
@@ -1256,18 +1257,26 @@ ctrl + shift + p (cmd palette)
 -- THIS will open file in the viewer
 ```
 
+`output retrieves inserted values`
+```SQL
+INSERT INTO [MyTable] 
+(Id, UserId, thingId, IsABool, ADateOrSomething)
+OUTPUT INSERTED.UserId, INSERTED.thingId
+VALUES (...); 
+```
+
 ---
 ---
 # :: Misc. ::
 ---
 
-# XI. Cron
+# XIII. Cron
 **For Ubuntu/Debian, you can find `cron`logs at:**
 ```bash
 /var/log/syslog
 ```
 
-# XII. Postman
+# XIV. Postman
 
 `variables created/stored in "Environments" in postman can be passed into fields using {{}}`
 ```sh
@@ -1289,7 +1298,7 @@ sudo lsof -nP -iTCP -sTCP:LISTEN
 ss -tulpn
 ```
 
-#  XII. Tree
+#  XV. Tree
 
 `tree [OPTIONS] [directory]` ("`.`" might not be necessary)
 `List folder structure only directories from current directory`
@@ -1307,7 +1316,7 @@ tree -d -L 1 .
 tree -a .
 ```
 
-# XIV. Git
+# XVI. Git
 `tagging commits, usually for release`
 ```bash
 git tag -l # the -l (list) flag is opt
