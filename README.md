@@ -1458,4 +1458,9 @@ git checkout <commit-hash>^ -- <file-path>
 # or toss away the staged revision, resuming current functionality
 ```
 
+`get merge commits that had conflicts by date`
+```sh
+git log --merges --since="2024-06-01" --grep="^# Conflicts:" --pretty=oneline
+```
+
 ---
