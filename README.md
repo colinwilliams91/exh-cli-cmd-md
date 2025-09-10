@@ -1338,6 +1338,13 @@ git push origin --tags
 # this will push all tags that aren't already on the remote up
 ```
 
+`see all your commits on target branch`
+`this is good for branches which constantly merge others in`
+```bash
+git log your-branch --since="YYYY-MM-DD" --until="YYYY-MM-DD" --author="YourGit.AuthorName"
+-- you can find your git author name by running git log
+```
+
 `using the git stash stack`
 ```sh
 git stash # puts all workind dir changes on top of stash stack
