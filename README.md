@@ -1102,8 +1102,23 @@ shift + right-click // opens menu with more options
 ---
 # XII. SQL
 ### MS SQL Server
+`CHECK IF AUTO_UPDATE_STATISTICS IS ON/OFF FOR DB`
+```SQL
+SELECT is_auto_create_stats_on, is_auto_update_stats_on
+FROM sys.databases
+WHERE name = 'YourDatabaseName';
+```
 
-`FIND COLUMNT in DB`
+`IDENTIFY WHICH COLUMNS INVOLVED IN QUERIES ARE MISSING STATISTICS`
+```SQL
+SET SHOWPLAN_ALL ON;
+-- REMEMVER TO TURN IT OFF!
+
+SET SHOWPLAN_ALL OFF;
+-- ALL QUERY EXECUTION WILL BE DISABLED ON DB UNTIL YOU DO!
+```
+
+`FIND COLUMN in DB`
 ```SQL
 SELECT * FROM information_schema.columns WHERE column_name = 'My_Column'
 ```
@@ -1217,6 +1232,10 @@ CLOSE TableCursor;
 DEALLOCATE TableCursor;
 ```
 ### SSMS
+`TURN ON "INCLUDE ACTUAL EXECUTION PLAN"`
+```SQL
+CTRL + M
+```
 
 `fix SSMS won't see new objects/tables`
 ```SQL
