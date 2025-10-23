@@ -1336,6 +1336,11 @@ tree -a .
 ```
 
 # XVI. Git
+`stash only staged files`
+```bash
+git stash push --staged -m "Stash only staged changes"
+```
+
 `tagging commits, usually for release`
 ```bash
 git tag -l # the -l (list) flag is opt
