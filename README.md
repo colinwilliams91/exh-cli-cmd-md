@@ -1102,6 +1102,7 @@ shift + right-click // opens menu with more options
 ---
 # XII. SQL
 ### MS SQL Server
+> extremely good resource: https://www.mssqltips.com/
 `CHECK IF AUTO_UPDATE_STATISTICS IS ON/OFF FOR DB`
 ```SQL
 SELECT is_auto_create_stats_on, is_auto_update_stats_on
@@ -1112,6 +1113,23 @@ WHERE name = 'YourDatabaseName';
 `MANUALLY CREATE A SINGLE COLUMN STATISTIC`
 ```SQL
 CREATE STATISTICS STATS_TableName_ColumnName ON [dbo].[TableName] (YourColumn);
+```
+
+`FIND ALL INDEXES IN TABLES (WITH INCLUDES COVERS)`
+```SQL
+SELECT 
+    t.name AS TableName,
+    i.name AS IndexName,
+    i.type_desc AS IndexType,
+    STRING_AGG(c.name + CASE WHEN ic.is_included_column = 1 THEN ' (INCLUDE)' ELSE '' END, ', ') AS Columns
+FROM sys.tables t
+JOIN sys.indexes i ON t.object_id = i.object_id
+JOIN sys.index_columns ic ON i.object_id = ic.object_id AND i.index_id = ic.index_id
+JOIN sys.columns c ON ic.object_id = c.object_id AND ic.column_id = c.column_id
+WHERE t.name IN ('Opportunities', 'Leads', 'Accounts', 'AccountPhoneNumbers', 'Estimates', 'RecurringServices')
+  AND i.type > 0  -- Exclude heaps
+GROUP BY t.name, i.name, i.type_desc
+ORDER BY t.name, i.name;
 ```
 
 `CHECK STATISTICS FOR A COLUMN`
