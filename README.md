@@ -1103,6 +1103,7 @@ shift + right-click // opens menu with more options
 # XII. SQL
 ### MS SQL Server
 > extremely good resource: https://www.mssqltips.com/
+
 `CHECK IF AUTO_UPDATE_STATISTICS IS ON/OFF FOR DB`
 ```SQL
 SELECT is_auto_create_stats_on, is_auto_update_stats_on
