@@ -1138,6 +1138,24 @@ ORDER BY t.name, i.name;
 DBCC SHOW_STATISTICS ("[db].[schema].[table]",YourColumn)
 ```
 
+`CHECK CURRENT STATISTICS/INDEXES (age and activity)`
+```SQL
+SELECT 
+    OBJECT_NAME(s.object_id) AS TableName,
+    s.name AS StatName,
+    sp.last_updated,
+    sp.rows,
+    sp.modification_counter
+FROM sys.stats s
+CROSS APPLY sys.dm_db_stats_properties(s.object_id, s.stats_id) sp
+WHERE OBJECT_NAME(s.object_id) IN (
+	  'YourTable'
+	, 'YourTable2'
+	, 'YourTable3'
+	)
+ORDER BY TableName, StatName;
+```
+
 `IDENTIFY WHICH COLUMNS INVOLVED IN QUERIES ARE MISSING STATISTICS`
 ```SQL
 SET SHOWPLAN_ALL ON;
