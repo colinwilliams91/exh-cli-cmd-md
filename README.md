@@ -983,6 +983,13 @@ kill -9 PROCESS_ID
 ```
 # VIII. .Net
 
+`clean and build`
+```C#
+// make sure to do this in the directory with the .sln file
+dotnet clean
+dotnet build --configuration Debug
+```
+
 `restore nuget packages`
 ```C#
 dotnet restore
