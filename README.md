@@ -1010,12 +1010,37 @@ ctrl + shift + p // cmd pallette
 
 **(EF)**
 https://learn.microsoft.com/en-us/ef/core/cli/dotnet
+`project agruments`
+```C#
+// these default to the current directory
+// the ARGS should be directories (not sln or csproj files and they don't need rel or abs paths, just the names)
+// (esp. if you are in their housing dir)
+--startup-project // where EF will build and run to find things like connection string
+--project // where output files (migration and designer files) should go
+```
+
 `EF from the CLI`
 ```C#
 // install, update, validate
 dotnet tool install --global dotnet-ef
 dotnet tool update --global dotnet-ef
 dotnet ef
+```
+
+`Add-Migration`
+```C#
+dotnet ef migrations add
+dotnet ef migrations add 0123456789_AddThing
+```
+
+`Update-Database`
+```C#
+// updates DB w/ latest migration (PMC: Update-Database)
+dotnet ef database update
+// or with a specific migration
+dotnet ef database update 20180904195021_InitialCreate
+// or specific DB (connection string)
+dotnet ef database update 20180904195021_InitialCreate --connection your_connection_string
 ```
 
 `create new console app .NET`
