@@ -1000,6 +1000,24 @@ dotnet restore
 dotnet run
 ```
 
+**(VSCODE)**
+`generate assets for build and debug`
+```C#
+ctrl + shift + p // cmd pallette
+// enter ".net: g"
+// select ".NET: Generate Assets for Build and Debug"
+```
+
+**(EF)**
+https://learn.microsoft.com/en-us/ef/core/cli/dotnet
+`EF from the CLI`
+```C#
+// install, update, validate
+dotnet tool install --global dotnet-ef
+dotnet tool update --global dotnet-ef
+dotnet ef
+```
+
 `create new console app .NET`
 ```powershell
 dotnet new console -o ./CsharpProjects/TestProject
@@ -1009,14 +1027,6 @@ dotnet new console -o ./CsharpProjects/TestProject
 `push package to nuget.org`
 ```C#
 dotnet nuget push <.\path\to\packed.1.0.0.nupkg> --api-key <abcdef12345> --source https://api.nuget.org/v3/index.json
-```
-
-**(VSCODE)**
-`generate assets for build and debug`
-```C#
-ctrl + shift + p // cmd pallette
-// enter ".net: g"
-// select ".NET: Generate Assets for Build and Debug"
 ```
 
 `CSS Caching with ASP.NET`
