@@ -1001,6 +1001,7 @@ dotnet run
 ```
 
 **(VSCODE)**
+
 `generate assets for build and debug`
 ```C#
 ctrl + shift + p // cmd pallette
@@ -1010,6 +1011,7 @@ ctrl + shift + p // cmd pallette
 
 **(EF)**
 > https://learn.microsoft.com/en-us/ef/core/cli/dotnet
+
 `project agruments`
 ```C#
 // these default to the current directory
