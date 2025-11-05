@@ -32,14 +32,19 @@ search using the roman numeral indexed legend for system or technology lookup
 ---
 
 # I. VSCode
-`command palette`
-```ts
-ctrl + shift + p
+`Navigate through sidebar/explorer panes`
+```TS
+ctrl + q
 ```
 
 `Go to last Edit`
 ```TS
 ctrl + K, ctrl + Q
+```
+
+`command palette`
+```ts
+ctrl + shift + p
 ```
 
 `Jump to Symbols (objects)`
