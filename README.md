@@ -1106,6 +1106,10 @@ killall <snap-store>
 ```
 
 # XI. Windows
+`determine machine architecture`
+```cmd
+echo %PROCESSOR_ARCHITECTURE%
+```
 
 `turn on/off windows features`
 ```C#
