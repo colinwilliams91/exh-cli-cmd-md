@@ -782,6 +782,20 @@ set -x
 (Get-Item .).FullName | Set-Clipboard
 ```
 
+`grep (pipe results to grep)`
+```powershell
+# find errors, excluding warnings, after build
+dotnet build | Select-String "error" | Select-String -Pattern "warning" -NotMatch
+# default
+dotnet build | Select-String "error"
+# OR
+dotnet build | Select-String "error|warning"
+# Count
+(dotnet build } Select-String "error").Count
+# Show +/- 1 line from output for context
+dotnet build | Select-String "error" -Context 1,1
+```
+
 `run cmd prompt in pshell`
 ```C#
 cmd  // starts cmd prompt in window
