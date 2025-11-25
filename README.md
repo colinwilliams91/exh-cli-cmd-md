@@ -58,6 +58,15 @@ ctrl + p # ... // search in workspace
 ctrl + p % ... // searches by char/string in realtime
 ```
 
+`allow dotnet to find its own path`
+```powershell
+# open VSC settings
+ctrl + , 
+# search "existingDotnetPath"
+# clear out the "Shared Existing DotNet Path"
+# e.g. remove C:\Program Files\dotnet\dotnet.exe
+```
+
 `enable psehll integrated terminal enhancements (preferences settings json)`
 ```ts
 "terminal.integrated.suggest.enabled": true
