@@ -1507,6 +1507,12 @@ git stash --all # similar to -u ?
 git stash --patch # stash hunk at a time
 ```
 
+`show part of the stash stack as diff`
+```sh
+# n == arbitrary index
+git stash show -p 'stash@{n}
+```
+
 `git status`
 ```sh
 git status -s # short output
