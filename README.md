@@ -1155,8 +1155,11 @@ autoMemoryReclaim=gradual
 # the WSL documentation suggests finding the GUI and configuring there:
 # Start > WSL Settings
 
-# The default is half of your RAM (reduce this further)
+# the default is half of your RAM (reduce this further)
 # I think the default is all of the processors (e.g. 20) (I reduced this to 10 or 5)
+
+# blog with example .wslconfig
+# https://www.valens.dev/blog/Take-control-of-your-WSL-resources-for-smooth-development
 ```
 
 `turn on/off windows features`
