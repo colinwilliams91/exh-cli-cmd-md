@@ -1141,6 +1141,24 @@ cd ~
 # or you can open Windows File Explorer and enter %UserProfile% 
 ```
 
+`.wslconfig`
+```powershell
+# documentation: https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconfig
+# actual contents of .wslconfig @ %UserProfile%
+[wsl2]
+processors=10
+memory=2123366400
+swap=1073741824
+[experimental]
+autoMemoryReclaim=gradual
+
+# the WSL documentation suggests finding the GUI and configuring there:
+# Start > WSL Settings
+
+# The default is half of your RAM (reduce this further)
+# I think the default is all of the processors (e.g. 20) (I reduced this to 10 or 5)
+```
+
 `turn on/off windows features`
 ```C#
 Control Panel > Programs > Programs and Features > Turn Windows featrures on or off
