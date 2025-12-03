@@ -1134,6 +1134,13 @@ killall <snap-store>
 echo %PROCESSOR_ARCHITECTURE%
 ```
 
+`find %UserProfile%`
+```powershell
+# access your home directory (which is typically your user profile, C:\Users\<UserName>
+cd ~
+# or you can open Windows File Explorer and enter %UserProfile% 
+```
+
 `turn on/off windows features`
 ```C#
 Control Panel > Programs > Programs and Features > Turn Windows featrures on or off
