@@ -1129,6 +1129,7 @@ killall <snap-store>
 ```
 
 # XI. Windows
+> Diagnostics Measuring Source Code (exmaples): docs/core/diagnostics/snippets/resource-monitoring
 `determine machine architecture`
 ```cmd
 echo %PROCESSOR_ARCHITECTURE%
