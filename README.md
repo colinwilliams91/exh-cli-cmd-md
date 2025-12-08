@@ -1488,6 +1488,11 @@ tree -a .
 ```
 
 # XVI. Git
+`stash files including new files`
+```bash
+git stash -u
+```
+
 `stash only staged files`
 ```bash
 git stash push --staged -m "Stash only staged changes"
