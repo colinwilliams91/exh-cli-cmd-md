@@ -1493,6 +1493,12 @@ tree -a .
 git stash -u
 ```
 
+`recall specific commit from the stash`
+```bash
+# they finally got rid of the awkward @{n} syntax
+git stash pop 1 # recalls the 2nd index of the stash
+```
+
 `stash only staged files`
 ```bash
 git stash push --staged -m "Stash only staged changes"
