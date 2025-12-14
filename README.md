@@ -803,6 +803,23 @@ dotnet build | Select-String "error|warning"
 (dotnet build } Select-String "error").Count
 # Show +/- 1 line from output for context
 dotnet build | Select-String "error" -Context 1,1
+
+# To search for file names (wildcard)
+Get-ChildItem *.tsx
+# And to pipe that result into a string-contents grep:
+Get=Childitem *.tsx | Select-String "<button>"
+```
+
+`System Execution Policies (Windows)`
+> https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.5#powershell-execution-policies
+```C#
+Get-ExecutionPolicy -List
+
+# Update Execution Policy
+Set-ExecutionPolicy -ExecutionPolicy <PolicyName> -Scope <scope>
+
+# Set back to Undefined to "remove" execution policy (factory defaults all to Undefinend)
+Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope LocalMachine
 ```
 
 `run cmd prompt in pshell`
