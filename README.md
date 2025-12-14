@@ -1037,6 +1037,11 @@ ctrl + shift + p // cmd pallette
 // select ".NET: Generate Assets for Build and Debug"
 ```
 
+`designate custom output/build directory`
+```C#
+URL: https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=visualstudio#directorybuildprops-example
+```
+
 **(EF)**
 > https://learn.microsoft.com/en-us/ef/core/cli/dotnet
 
