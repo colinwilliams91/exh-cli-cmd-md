@@ -810,6 +810,13 @@ Get-ChildItem *.tsx
 Get=Childitem *.tsx | Select-String "<button>"
 ```
 
+`Measure Objects`
+```C#
+# Measure-Object
+Get-Content "c:\your\file\path\example.tsx" | Measure-Object -Line
+# Can pass args: -Line -Word -Character -Property
+```
+
 `System Execution Policies (Windows)`
 > https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.5#powershell-execution-policies
 ```C#
