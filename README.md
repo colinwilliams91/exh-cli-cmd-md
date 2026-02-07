@@ -32,6 +32,9 @@ search using the roman numeral indexed legend for system or technology lookup
 ---
 
 # I. VSCode
+`shortcuts WHEN clause context keys`
+https://code.visualstudio.com/api/references/when-clause-contexts#available-context-keys
+
 `Navigate through sidebar/explorer panes`
 ```TS
 ctrl + q
