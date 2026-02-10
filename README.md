@@ -1167,6 +1167,11 @@ killall <snap-store>
 echo %PROCESSOR_ARCHITECTURE%
 ```
 
+`invalidate windows hidden icon cache (db)`
+```cmd
+ie4uinit.exe -show
+```
+
 `find %UserProfile%`
 ```powershell
 # access your home directory (which is typically your user profile, C:\Users\<UserName>
