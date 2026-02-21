@@ -820,6 +820,11 @@ Get-Content "c:\your\file\path\example.tsx" | Measure-Object -Line
 # Can pass args: -Line -Word -Character -Property
 ```
 
+`See System ENV K/Vs`
+```C#
+Get-ItemProperty -Path "HKCU:\Environment"
+```
+
 `System Execution Policies (Windows)`
 > https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.5#powershell-execution-policies
 ```C#
