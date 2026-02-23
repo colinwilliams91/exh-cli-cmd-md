@@ -1150,6 +1150,9 @@ _WSL_
 `basic WSL commands docs (including all DISTROs installs)`:
 https://learn.microsoft.com/en-us/windows/wsl/basic-commands
 
+`containerize existing project (.devcontainer) with Docker/WSL2 (good for deployment)`:
+https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#develop-in-remote-containers-using-vs-code
+
 `check Ubuntu version`
 ```sh
 lsb_release -a
