@@ -1145,6 +1145,7 @@ dotnet nuget push <.\path\to\packed.1.0.0.nupkg> --api-key <abcdef12345> --sourc
 ---
 
 # X. Ubuntu
+_WSL_
 `check Ubuntu version`
 ```sh
 lsb_release -a
@@ -1153,6 +1154,17 @@ lsb_release -a
 `cross OS file access (wsl -> win)`
 ```sh
 cd /mnt/c
+```
+
+`access linux files w/ win File Explorer`
+```sh
+# navigate to \\wsl.localhost\
+```
+
+`launch win files and programs from WSL`
+```sh
+# e.g.
+powershell.exe /c start
 ```
 
 `search for software to install` `<application>`
