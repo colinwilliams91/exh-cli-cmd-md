@@ -1175,6 +1175,7 @@ sudo apt search <audacity>
 `install from cli`
 ```sh
 sudo apt install audacity
+sudo apt install nautilus # <- LINUX FILE EXPLORER GUI
 ```
 
 `killall <-- terminates process`
