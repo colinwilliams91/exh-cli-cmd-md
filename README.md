@@ -1150,6 +1150,11 @@ dotnet nuget push <.\path\to\packed.1.0.0.nupkg> --api-key <abcdef12345> --sourc
 lsb_release -a
 ```
 
+`cross OS file access (wsl -> win)`
+```sh
+cd /mnt/c
+```
+
 `search for software to install` `<application>`
 ```sh
 sudo apt search <audacity>
