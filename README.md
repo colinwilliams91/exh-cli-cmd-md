@@ -1171,6 +1171,7 @@ powershell.exe /c start
 ```sh
 sudo apt search <audacity>
 ```
+_install vGPU drivers to enable OpenGL rendering_: https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps#prerequisites
 
 `install from cli`
 ```sh
