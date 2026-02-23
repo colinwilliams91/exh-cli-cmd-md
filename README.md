@@ -1146,6 +1146,10 @@ dotnet nuget push <.\path\to\packed.1.0.0.nupkg> --api-key <abcdef12345> --sourc
 
 # X. Ubuntu
 _WSL_
+
+`basic WSL commands docs (including all DISTROs installs)`:
+https://learn.microsoft.com/en-us/windows/wsl/basic-commands
+
 `check Ubuntu version`
 ```sh
 lsb_release -a
