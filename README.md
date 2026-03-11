@@ -1751,6 +1751,7 @@ ctrl + ->
 ```
 #### Squad (`squad-cli`)
 > _docs: https://bradygaster.github.io/squad-pr/guide/sample-prompts.html_
+
 > _https://bradygaster.github.io/squad-pr/reference/cli.html_
 
 | Command | Description | Requires .squad/ |
