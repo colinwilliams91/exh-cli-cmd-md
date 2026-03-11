@@ -24,6 +24,7 @@ search using the roman numeral indexed legend for system or technology lookup
 |  XIV  | Postman            | Misc.            |
 |  XV   | Tree               | Misc.            |
 |  XVI  | Git                | Misc.            |
+|  XVII | Copilot            | Framework        |
 
 ---
 ---
@@ -1729,6 +1730,24 @@ git checkout <commit-hash>^ -- <file-path>
 `get merge commits that had conflicts by date`
 ```sh
 git log --merges --since="2024-06-01" --grep="^# Conflicts:" --pretty=oneline
+```
+
+# XVII. Copilot
+_the inline suggestion commands must be when the suggestions are visible_
+`scroll through copilot inline suggestions`
+```sh
+alt + ]
+alt + [
+```
+
+`open copilot inline suggestions in new tab`
+```sh
+ctrl + enter
+```
+
+`accept partial (next word) of inline suggestion`
+```sh
+ctrl + ->
 ```
 
 ---
