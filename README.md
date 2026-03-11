@@ -1749,5 +1749,42 @@ ctrl + enter
 ```sh
 ctrl + ->
 ```
+#### Squad (`squad-cli`)
+> _docs: https://bradygaster.github.io/squad-pr/guide/sample-prompts.html_
+> _https://bradygaster.github.io/squad-pr/reference/cli.html_
+
+| Command | Description | Requires .squad/ |
+| ------- | ----------- | ---------------- |
+| squad | Enter interactive shell (no args) | No |
+| squad init | Initialize Squad in the current repo | No |
+| squad init --global	| Create a personal squad at ~/.squad/ | No |
+| squad init --mode remote <path>	| Initialize linked to a remote team root | No |
+| squad shell	| Enter the interactive shell explicitly	| Yes |
+| squad status	| Show which squad is active and why	| Yes |
+| squad doctor	| Validate squad setup integrity (9-check diagnostic)	| Yes |
+| squad hire	| Team creation wizard	| Yes |
+| squad hire --name <name> --role <role>	| Add a specific member	| Yes |
+| squad upgrade	| Upgrade Squad-owned files to latest version	| Yes |
+| squad upgrade --migrate-directory	| Rename legacy directory to .squad/ | Yes |
+| squad link <team-repo-path>	| Link project to a remote team root | Yes |
+| squad export	| Export squad to a portable archive	| Yes |
+| squad export --out <path>	| Export to a custom path	| Yes |
+| squad import <file>	| Import a squad from an export archive | No |
+| squad import <file> --force	| Replace existing squad (archives the old one) | No |
+| squad triage	| Scan for work and categorize issues | Yes |
+| squad triage --interval <min>	| Continuous triage (default: every 10 min) | Yes |
+| squad loop	| Continuous work loop (Ralph mode)	| Yes |
+| squad loop --filter <label>	| Filter work loop by label	| Yes |
+| squad heartbeat	| Run Ralph’s triage cycle manually	| Yes |
+| squad heartbeat --dry-run	| Preview what Ralph would do	| Yes |
+| squad copilot	| Add the @copilot coding agent to the team | Yes |
+| squad copilot --off	| Remove @copilot from the team	| Yes |
+| squad copilot --auto-assign	| Enable auto-assignment for @copilot	| Yes |
+| squad plugin marketplace add|list|browse	| Manage plugin marketplaces | Yes |
+| squad upstream add <path-or-url>	| Inherit skills from another squad | Yes |
+| squad aspire	| Launch Aspire dashboard for observability | No |
+| squad aspire --docker	| Force Docker mode for Aspire | No |
+| squad scrub-emails [directory]	| Remove emails from Squad state files | No |
+| squad --version	| Print installed version | No |
 
 ---
