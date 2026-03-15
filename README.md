@@ -1788,4 +1788,7 @@ ctrl + ->
 | squad scrub-emails [directory]	| Remove emails from Squad state files | No |
 | squad --version	| Print installed version | No |
 
+`chrome-devtools CLI reference` (_controls UI interactions via CLI_) (_used by chrome-devtools MCP under the hood_)
+https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/skills/chrome-devtools-cli/SKILL.md#command-usage
+
 ---
