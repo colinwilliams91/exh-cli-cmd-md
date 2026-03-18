@@ -1794,14 +1794,14 @@ https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/skills/chrome-de
 
 # XVIII. Diagrams
 `sequence diagrams syntax (md)`
-```
-\`\`\`sequence
+<pre>
+```sequence
 Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
 Bob->Alice: I am good thanks!
 Note left of Alice: Alice responds
 Alice->Bob: Where have you been?
-\`\`\`
 ```
+</pre>
 
 ---
