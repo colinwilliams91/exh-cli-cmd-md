@@ -25,6 +25,7 @@ search using the roman numeral indexed legend for system or technology lookup
 |  XV   | Tree               | Misc.            |
 |  XVI  | Git                | Misc.            |
 |  XVII | Copilot            | Framework        |
+| XVIII | Diagrams           | Misc.            |
 
 ---
 ---
@@ -1790,5 +1791,17 @@ ctrl + ->
 
 `chrome-devtools CLI reference` (_controls UI interactions via CLI_) (_used by chrome-devtools MCP under the hood_)
 https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/skills/chrome-devtools-cli/SKILL.md#command-usage
+
+# XVIII. Diagrams
+`sequence diagrams syntax (md)`
+```
+\`\`\`sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob->Alice: I am good thanks!
+Note left of Alice: Alice responds
+Alice->Bob: Where have you been?
+\`\`\`
+```
 
 ---
