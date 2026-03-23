@@ -1044,6 +1044,8 @@ lsof -i :3000
 kill -9 PROCESS_ID
 ```
 # VIII. .Net
+`aspire CLI reference docs`
+https://aspire.dev/reference/cli/commands/aspire/
 
 `clean and build`
 ```C#
