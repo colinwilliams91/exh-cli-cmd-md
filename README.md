@@ -1759,6 +1759,17 @@ ctrl + ->
 /share [file|gist]
 ```
 
+`reference IDE code selection in copilot CLI`
+```sh
+### the `#` symbol points at the selected code, which is already loaded in the context
+gh copilot explain #
+gh copilot tests # -> generates tests for selected code
+gh copilot fix # -> fixes selected code
+gh copilot suggest # → suggest improvements for the selected code.
+gh copilot docs # → generate documentation for the selected code.
+gh copilot refactor # → refactor the selected code.
+```
+
 #### Squad (`squad-cli`)
 > _docs: https://bradygaster.github.io/squad-pr/guide/sample-prompts.html_
 
