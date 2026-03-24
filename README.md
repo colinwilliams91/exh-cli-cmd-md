@@ -1770,6 +1770,9 @@ gh copilot docs # → generate documentation for the selected code.
 gh copilot refactor # → refactor the selected code.
 ```
 
+> https://github.com/alirezarezvani/claude-code-skill-factory/blob/dev/documentation/templates/MASTER_SLASH_COMMANDS_PROMPT.md#2-bash-permission-patterns-critical
+`anthropic official rule/api for agent slash-command creation: allowed bash commands`
+
 #### Squad (`squad-cli`)
 > _docs: https://bradygaster.github.io/squad-pr/guide/sample-prompts.html_
 
