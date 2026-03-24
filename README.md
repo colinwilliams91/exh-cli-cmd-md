@@ -1752,6 +1752,13 @@ ctrl + enter
 ```sh
 ctrl + ->
 ```
+#### Copilot slash-commands API quick reference
+> https://github.blog/ai-and-ml/github-copilot/a-cheat-sheet-to-slash-commands-in-github-copilot-cli/#quick-reference
+`Document sessions, async handoff, team sharing (GH gist or .md)`
+```sh
+/share [file|gist]
+```
+
 #### Squad (`squad-cli`)
 > _docs: https://bradygaster.github.io/squad-pr/guide/sample-prompts.html_
 
