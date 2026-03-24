@@ -1567,6 +1567,15 @@ tree -a .
 ```
 
 # XVI. Git
+`if you forked a repo from some boomer who uses SSH instead of HTTPS:`
+```sh
+git remote -v # see your remote stuff (you probably have an upstream or need one)
+# if you see something like this:
+# upstream        git@github.com:username/repo.git (fetch)
+# then you are boomerized and using SSH, run this:
+git remote set-url upstream https://github.com/username/repo.git
+```
+
 `stash files including new files`
 ```bash
 git stash -u
