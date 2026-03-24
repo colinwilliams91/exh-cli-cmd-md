@@ -839,6 +839,13 @@ Set-ExecutionPolicy -ExecutionPolicy <PolicyName> -Scope <scope>
 Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope LocalMachine
 ```
 
+`start ssh agent`
+```powershell
+Get-Service ssh-agent | Select StartType
+Set-Service -Name ssh-agent -StartupType Manual
+Start-Service ssh-agent
+```
+
 `run cmd prompt in pshell`
 ```C#
 cmd  // starts cmd prompt in window
