@@ -1576,6 +1576,11 @@ git remote -v # see your remote stuff (you probably have an upstream or need one
 git remote set-url upstream https://github.com/username/repo.git
 ```
 
+`show all changes from specific commit in terminal`
+```bash
+git show <commit-hash>
+```
+
 `stash files including new files`
 ```bash
 git stash -u
