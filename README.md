@@ -24,7 +24,7 @@ search using the roman numeral indexed legend for system or technology lookup
 |  XIV  | Postman            | Misc.            |
 |  XV   | Tree               | Misc.            |
 |  XVI  | Git                | Misc.            |
-|  XVII | Copilot            | Framework        |
+|  XVII | Agents             | Framework        |
 | XVIII | Diagrams           | Misc.            |
 
 ---
@@ -1756,7 +1756,8 @@ git checkout <commit-hash>^ -- <file-path>
 git log --merges --since="2024-06-01" --grep="^# Conflicts:" --pretty=oneline
 ```
 
-# XVII. Copilot
+# XVII. Agents
+### Copilot
 _the inline suggestion commands must be when the suggestions are visible_
 `scroll through copilot inline suggestions`
 ```sh
@@ -1789,6 +1790,11 @@ gh copilot fix # -> fixes selected code
 gh copilot suggest # → suggest improvements for the selected code.
 gh copilot docs # → generate documentation for the selected code.
 gh copilot refactor # → refactor the selected code.
+```
+
+`references in agent-native rules' file`
+```sh
+# Referencing anything with @ (prefix?) will prompt the agent to read during startup
 ```
 
 > https://github.com/alirezarezvani/claude-code-skill-factory/blob/dev/documentation/templates/MASTER_SLASH_COMMANDS_PROMPT.md#2-bash-permission-patterns-critical
