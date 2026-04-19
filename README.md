@@ -26,6 +26,7 @@ search using the roman numeral indexed legend for system or technology lookup
 |  XVI  | Git                | Misc.            |
 |  XVII | Agents             | Framework        |
 | XVIII | Diagrams           | Misc.            |
+|  XIX  | Package.json/npm   | Misc.            |
 
 ---
 ---
@@ -1853,5 +1854,38 @@ Note left of Alice: Alice responds
 Alice->Bob: Where have you been?
 ```
 </pre>
+
+# XIX. Package.json/npm
+`bump package version via npm CLI`
+```sh
+# makes appropriate version bump in package.json
+# and commits files
+npm version patch
+npm version minor
+npm version major
+```
+
+#### Npm Package Life Cycle Events
+`API - how npm handles the package.json script field`
+| Lifecycle Event & Package Script Property | Script Timing & Purpose |
+| ----------------------------------------- | ----------------------- |
+| prepublish: | this is run BEFORE the package is packed and published, it will also need to run on local npm install without any arguments. |
+| prepare: | this is to run both BEFORE the package is packed and published, as well as on local npm install without any arguments. This is going to run AFTER prepublish, but will run BEFORE prepublishOnly. |
+| prepublishOnly: | this will run BEFORE the package is prepared and packed, and ONLY on npm publish. |
+| prepack: | this will run BEFORE a tarball is packed (on npm pack, npm publish, as well as when installing git dependencies) |
+| postpack: | this is run AFTER the tarball has been generated and moved into its final destination. |
+| publish, postpublish: | this is run AFTER the package is published. |
+| preinstall: | this is run BEFORE the package is installed |
+| install, postinstall: | This will run AFTER the package is installed. |
+| preuninstall, uninstall: | this is run BEFORE the package is uninstalled. |
+| postuninstall: | this will run AFTER the package is uninstalled. |
+| preversion: | this will run BEFORE bumping the package version. |
+| version: | this will run AFTER bumping the package version, but BEFORE commit. |
+| postversion: | this will run AFTER bumping the package version, and AFTER commit. |
+| pretest, test, posttest: | this is run by the npm test command. |
+| prestop, stop, poststop: | this is run by the npm stop command. |
+| prestart, start, poststart: | this is run by the npm start command. |
+| prerestart, restart, postrestart: | this is run by the npm restart command. It should be noted that: npm restart runs the start and stop scripts if no restart script is provided. |
+| preshrinkwrap, shrinkwrap, postshrinkwrap: | this is run by the npm shrinkwrap command. |
 
 ---
