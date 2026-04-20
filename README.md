@@ -1865,6 +1865,18 @@ npm version minor
 npm version major
 ```
 
+`referencing package.json fields`
+```sh
+# (e.g. in a package.json script)
+${process.env.npm_package_version}
+# e.g.
+// ...
+"scripts": {
+  "ready": "node -e \"console.log(`Extension version ${process.env.npm_package_version} is ready for publishing!`)\""
+}
+// ...
+```
+
 #### Npm Package Life Cycle Events
 `API - how npm handles the package.json script field`
 | Lifecycle Event & Package Script Property | Script Timing & Purpose |
