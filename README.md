@@ -1055,6 +1055,11 @@ kill -9 PROCESS_ID
 `aspire CLI reference docs`
 https://aspire.dev/reference/cli/commands/aspire/
 
+`output running aspire details in JSON`
+```C#
+aspire ps --format Json
+```
+
 `clean and build`
 ```C#
 // make sure to do this in the directory with the .sln file
