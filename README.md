@@ -786,6 +786,18 @@ set -x
 ```
 
 # IV. Powershell
+`here-string (@" ... "@) breaking multiline command`
+```powershell
+### if there is any whitespace before the closing `"@` e.g.:
+# ...
+@"
+Hellow
+World
+ "@ # <-- needs NO space prefix
+  }
+} | ConvertTo-Json # ...
+### script will freeze and multi-line command cannot exit
+```
 
 `get current path`
 ```powershell
