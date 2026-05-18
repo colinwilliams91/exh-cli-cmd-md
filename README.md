@@ -809,6 +809,13 @@ World
 (Get-Item .).FullName | Set-Clipboard
 ```
 
+`print system env vars`
+```powershell
+Get-childItem Env:
+# or
+ls Env:
+```
+
 `grep (pipe results to grep)`
 ```powershell
 # find errors, excluding warnings, after build
