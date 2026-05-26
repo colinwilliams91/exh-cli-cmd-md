@@ -1606,6 +1606,12 @@ git remote set-url upstream https://github.com/username/repo.git
 git show <commit-hash>
 ```
 
+`add a new worktree on a new branch sourced from a specific branch`
+```bash
+# this sources from your LOCAL existing_branch NOT the one on the remote
+git worktree add -b new_branch ./path_for_newbranch  existing_branch
+```
+
 `stash files including new files`
 ```bash
 git stash -u
