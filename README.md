@@ -1656,6 +1656,25 @@ git log your-branch --since="YYYY-MM-DD" --until="YYYY-MM-DD" --author="YourGit.
 -- you can find your git author name by running git log
 ```
 
+`reasonable git log: short hash, relative date, commit author, commit subject line`
+```bash
+git log --decorate --all --pretty=format:"%C(brightyellow)%h%C(reset) %C(cyan)%ar%C(reset) %C(brightmagenta)%an%C(reset) %s %C(auto)%d%C(reset)"
+```
+
+| Placeholder | Meaning                      |
+| ----------- | ---------------------------- |
+| `%h`        | Short hash                   |
+| `%H`        | Full hash                    |
+| `%an`       | Author name                  |
+| `%ae`       | Author email                 |
+| `%cn`       | Committer name               |
+| `%ce`       | Committer email              |
+| `%ad`       | Author date                  |
+| `%ar`       | Relative date ("2 days ago") |
+| `%s`        | Subject line                 |
+| `%b`        | Commit body                  |
+
+
 `using the git stash stack`
 ```sh
 git stash # puts all workind dir changes on top of stash stack
