@@ -27,6 +27,7 @@ search using the roman numeral indexed legend for system or technology lookup
 |  XVII | Agents             | Framework        |
 | XVIII | Diagrams           | Misc.            |
 |  XIX  | Package.json/npm   | Misc.            |
+|  XX   | Tooling Misc.      | Misc.            |
 
 ---
 ---
@@ -1948,5 +1949,11 @@ ${process.env.npm_package_version}
 | prestart, start, poststart: | this is run by the npm start command. |
 | prerestart, restart, postrestart: | this is run by the npm restart command. It should be noted that: npm restart runs the start and stop scripts if no restart script is provided. |
 | preshrinkwrap, shrinkwrap, postshrinkwrap: | this is run by the npm shrinkwrap command. |
+
+# XIX. Tooling Misc.
+`ffmpeg: convert png (or other?) to ico massively more efficient than online converters`
+```sh
+ ffmpeg -i favicon-32.png favicon.ico
+```
 
 ---
