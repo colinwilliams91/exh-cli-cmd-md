@@ -1190,6 +1190,11 @@ https://learn.microsoft.com/en-us/windows/wsl/basic-commands
 `containerize existing project (.devcontainer) with Docker/WSL2 (good for deployment)`:
 https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#develop-in-remote-containers-using-vs-code
 
+`check machine architecture`
+```sh
+uname -m
+```
+
 `check Ubuntu version`
 ```sh
 lsb_release -a
@@ -1586,7 +1591,7 @@ tree -d .
 ```sh
 tree -d -L 1 .
 ```
-
+sudo apt install fonts-firacode
 `List folder structure and all hidden files`
 ```sh
 tree -a .
