@@ -1607,6 +1607,11 @@ git remote set-url upstream https://github.com/username/repo.git
 git show <commit-hash>
 ```
 
+`list git worktrees with their head`
+```bash
+git worktree list --porcelain
+```
+
 `add a new worktree on a new branch sourced from a specific branch`
 ```bash
 # this sources from your LOCAL existing_branch NOT the one on the remote
