@@ -1240,6 +1240,12 @@ killall <snap-store>
 echo %PROCESSOR_ARCHITECTURE%
 ```
 
+`win quick assist (peer remote connection)`
+```cmd
+ctrl + win + q
+# share code or enter code to connect
+```
+
 `invalidate windows hidden icon cache (db)`
 ```cmd
 ie4uinit.exe -show
