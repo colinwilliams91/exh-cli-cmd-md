@@ -1767,6 +1767,12 @@ git restore
 git switch # only takes branch as arg
 # checkout is for switching tags and commits
 ```
+
+`source new branch from non-checked-out branch`
+```bash
+git checkout -b my-new-branch source-branch
+```
+
 #### Rebase
 `how to proceed in interactive rebase`
 ```bash
