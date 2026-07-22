@@ -787,6 +787,11 @@ set -x
 ```
 
 # IV. Powershell
+`check the age of a file`
+```powershell
+Get-Item .\my-binary.exe | Select-Object Name, LastWriteTime
+```
+
 `here-string (@" ... "@) breaking multiline command`
 ```powershell
 ### if there is any whitespace before the closing `"@` e.g.:
