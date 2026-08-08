@@ -605,6 +605,11 @@ alt + shift + e
 # III. Bash
 `following are bash specific`
 
+`restart shell process and reload profile`
+```sh
+exec $SHELL -l
+```
+
 **Explorer Windows File System** (so helpful connecting sub-system partition to main OS)
 `open windows file explorer GUI for WSL`
 ```sh
