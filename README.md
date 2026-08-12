@@ -1626,6 +1626,8 @@ git remote set-url upstream https://github.com/username/repo.git
 `show all changes from specific commit in terminal`
 ```bash
 git show <commit-hash>
+# to just see changed file names
+git show --name-only <commit-hash>
 ```
 
 `list git worktrees with their head`
@@ -1674,6 +1676,11 @@ git log --pretty=oneline
 
 git push origin --tags
 # this will push all tags that aren't already on the remote up
+```
+
+`classic git log includes time stamps`
+```bash
+git log
 ```
 
 `see all your commits on target branch`
