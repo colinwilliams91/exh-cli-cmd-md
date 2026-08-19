@@ -822,9 +822,15 @@ World
 
 `print system env vars`
 ```powershell
-Get-childItem Env:
+Get-ChildItem Env:
 # or
 ls Env:
+```
+
+`compare byte-level equality (hash)`
+```powershell
+Get-FileHash .\my-file.html -algorithm SHA256
+Get-FileHash .\my-other-file.html -algorithm SHA256
 ```
 
 `grep (pipe results to grep)`
