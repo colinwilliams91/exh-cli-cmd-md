@@ -1262,6 +1262,12 @@ ctrl + win + q
 # share code or enter code to connect
 ```
 
+`view web page source code`
+```powershell
+# must have browser open and web page visible
+ctrl + u
+```
+
 `invalidate windows hidden icon cache (db)`
 ```cmd
 ie4uinit.exe -show
