@@ -1642,6 +1642,25 @@ git show <commit-hash>
 git show --name-only <commit-hash>
 ```
 
+`"cherry-pick" a commit from a different repo into target repo`
+```bash
+# Source - https://stackoverflow.com/a/9507417
+# Posted by Robert Wahler, modified by community. See post 'Timeline' for change history
+# Retrieved 2026-08-31, License - CC BY-SA 4.0
+
+git --git-dir=..\docs.git \
+format-patch -k -1 --stdout <commit SHA> | \
+git am -3 -k
+```
+
+`show all branches (local + remote)`
+```bash
+git branch -a   # all
+git branch -r   # remote
+git branch -av  # all-verbose
+git branch -rv  # remote-verbose
+```
+
 `list git worktrees with their head`
 ```bash
 git worktree list --porcelain
