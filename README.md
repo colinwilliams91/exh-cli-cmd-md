@@ -1648,7 +1648,7 @@ git show --name-only <commit-hash>
 # Posted by Robert Wahler, modified by community. See post 'Timeline' for change history
 # Retrieved 2026-08-31, License - CC BY-SA 4.0
 
-git --git-dir=..\docs.git \
+git --git-dir=..\repo-with-commit.git \
 format-patch -k -1 --stdout <commit SHA> | \
 git am -3 -k
 ```
