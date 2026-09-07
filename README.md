@@ -2052,4 +2052,30 @@ dd
 :q!
 ```
 
+#### Herdr
+`prefix (leader) key`
+```sh
+ctrl + b
+# or ctrl + space (i think?)
+```
+
+`enter copy mode (win term ctrl + shift + m)`
+```sh
+prefix + [
+
+# inside copy mode:
+## to search
+/ or ?
+## to navigate
+h j k l
+ctrl + u ctrl + d ctrl + b ctrl + f
+## start selection
+v or space
+## to yank (copy)
+y or enter
+
+## to exit
+esc
+```
+
 ---
