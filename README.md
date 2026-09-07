@@ -28,6 +28,7 @@ search using the roman numeral indexed legend for system or technology lookup
 | XVIII | Diagrams           | Misc.            |
 |  XIX  | Package.json/npm   | Misc.            |
 |  XX   | Tooling Misc.      | Misc.            |
+|  XXI  | Vim/NVim           | IDE              |
 
 ---
 ---
@@ -2024,6 +2025,31 @@ ${process.env.npm_package_version}
 `ffmpeg: convert png (or other?) to ico massively more efficient than online converters`
 ```sh
  ffmpeg -i favicon-32.png favicon.ico
+```
+
+# XXI. Vim/NVim
+`enter INSERT mode with a newline`
+```sh
+o
+```
+
+`enter INSERT mode`
+```sh
+i
+```
+
+`delete line (no INSERT mode)`
+```sh
+dd
+```
+
+`quitting`
+```sh
+# save and quit
+:wq
+
+# quit no-save
+:q!
 ```
 
 ---
