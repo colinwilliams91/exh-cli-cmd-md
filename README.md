@@ -2055,8 +2055,8 @@ dd
 #### Herdr
 `prefix (leader) key`
 ```sh
-ctrl + b
-# or ctrl + space (i think?)
+# just space in NORMAL mode
+space
 ```
 
 `enter copy mode (win term ctrl + shift + m)`
@@ -2076,6 +2076,14 @@ y or enter
 
 ## to exit
 esc
+```
+
+`leader + ... commands`
+```sh
+# move to file explorer
+space + e
+# move to other buffer
+space + `
 ```
 
 ---
