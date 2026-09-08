@@ -2062,6 +2062,7 @@ space
 `enter copy mode (win term ctrl + shift + m)`
 ```sh
 prefix + [
+# or -> space + [
 
 # inside copy mode:
 ## to search
@@ -2080,7 +2081,11 @@ esc
 
 `leader + ... commands`
 ```sh
-# move to file explorer
+# cycle window focus
+ctrl + w
+ctrl + h # move to left window
+ctrl + l # move to right window
+# open to file explorer
 space + e
 # move to other buffer
 space + `
