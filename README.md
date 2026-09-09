@@ -1643,6 +1643,11 @@ git show <commit-hash>
 git show --name-only <commit-hash>
 ```
 
+`see the diff of a single file`
+```sh
+git diff -- path/to/file
+```
+
 `"cherry-pick" a commit from a different repo into target repo`
 ```bash
 # Source - https://stackoverflow.com/a/9507417
