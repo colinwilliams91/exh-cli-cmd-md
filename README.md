@@ -2057,6 +2057,12 @@ dd
 :q!
 ```
 
+`duplicate line downwards`
+```sh
+# yank & paste
+yyp
+```
+
 #### Herdr
 `prefix (leader) key`
 ```sh
