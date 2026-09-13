@@ -2033,6 +2033,20 @@ ${process.env.npm_package_version}
 ```
 
 # XXI. Vim/NVim
+`**daily drivers**`
+```sh
+space space # fuzzy-find any file in the current dir
+space s g   # search all files using grep w/ a preview
+space e     # toggle the file tree on/off
+ctrl w w    # hop from the file tree to/from the editor
+shift h     # move left between the open "buffers" (tabs)
+shift l     # move right between the open tabs
+space b d   # close a tab
+space b o   # close all other tabs but the current
+space g g   # launch LazyGit in a floating pane (cwd)
+space u w   # toggle soft wrap
+```
+
 `enter INSERT mode with a newline`
 ```sh
 o
