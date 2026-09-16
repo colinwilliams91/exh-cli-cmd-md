@@ -1627,6 +1627,12 @@ tree -a .
 ```
 
 # XVI. Git
+`check staged files (in the git index) (meaning committed, working tree clean)`
+```sh
+# these are the files with changes (diffed against local disk of files)
+git ls-files
+```
+
 `if you forked a repo from some boomer who uses SSH instead of HTTPS:`
 ```sh
 git remote -v # see your remote stuff (you probably have an upstream or need one)
