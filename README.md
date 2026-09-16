@@ -17,7 +17,7 @@ search using the roman numeral indexed legend for system or technology lookup
 |  VII  | Node               | Framework        |
 | VIII  | .Net               | Framework        |
 |  IX   | CSS                | Framework        |
-|   X   | Ubuntu             | Operating System |
+|   X   | Ubuntu/Arch        | Operating System |
 |  XI   | Windows            | Operating System |
 |  XII  | SQL                | DB               |
 | XIII  | Cron               | Misc.            |
@@ -1198,7 +1198,49 @@ dotnet nuget push <.\path\to\packed.1.0.0.nupkg> --api-key <abcdef12345> --sourc
 # :: Operating System ::
 ---
 
-# X. Ubuntu
+# X. Ubuntu/Arch
+_Arch_
+### `chezmoi` (like dotfiles stow)
+`take current versions of my config files and sync them up to GH`
+```sh
+# still needs cd into chezmoi, git add, commit, push
+chezmoi re-add
+
+# optionally see what will be synced before hand...
+chezmoi diff
+```
+
+`on a new machine, bootstrap my dotfiles`
+```sh
+chezmoi init --apply colinwilliams91
+
+# pre-req steps:
+New Omarchy machine
+        │
+        ▼
+     install mise
+        │
+        ▼
+   install chezmoi
+        │
+        ▼
+chezmoi init --apply colinwilliams91
+        │
+        ├── ~/.config/git/config
+        ├── ~/.config/gh-dash/config.yml
+        └── ~/.config/mise/config.toml
+```
+
+`update a machine from the GH remote`
+```sh
+chezmoi update
+```
+
+`chezmoi helper cd to chezmoi master`
+```sh
+chezmoi cd
+```
+
 _WSL_
 
 `basic WSL commands docs (including all DISTROs installs)`:
