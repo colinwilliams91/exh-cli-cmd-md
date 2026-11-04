@@ -1675,6 +1675,14 @@ tree -a .
 git ls-files
 ```
 
+`use git diff but with a specific commit instead of the staged index only)`
+```sh
+git diff <commit-hash>^!
+
+# limit output to specific files
+git diff <commit-hash>^! -- path/to/file
+```
+
 `if you forked a repo from some boomer who uses SSH instead of HTTPS:`
 ```sh
 git remote -v # see your remote stuff (you probably have an upstream or need one)
