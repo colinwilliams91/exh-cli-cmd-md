@@ -2100,6 +2100,7 @@ shift l     # move right between the open tabs
 space b d   # close a tab
 space b o   # close all other tabs but the current
 space g g   # launch LazyGit in a floating pane (cwd)
+space g f   # launch LazyGit Git Log (current) File
 space u w   # toggle soft wrap
 ```
 
