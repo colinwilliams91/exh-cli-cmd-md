@@ -17,7 +17,7 @@ search using the roman numeral indexed legend for system or technology lookup
 |  VII  | Node               | Framework        |
 | VIII  | .Net               | Framework        |
 |  IX   | CSS                | Framework        |
-|   X   | Ubuntu/Arch        | Operating System |
+|   X   | Linux              | Operating System |
 |  XI   | Windows            | Operating System |
 |  XII  | SQL                | DB               |
 | XIII  | Cron               | Misc.            |
@@ -1198,7 +1198,14 @@ dotnet nuget push <.\path\to\packed.1.0.0.nupkg> --api-key <abcdef12345> --sourc
 # :: Operating System ::
 ---
 
-# X. Ubuntu/Arch
+# X. Linux
+`pg up / pg down`
+```sh
+# if keyboard lacks specific keys
+fn + up
+fn + down
+```
+
 _Arch_
 ### `chezmoi` (like dotfiles stow)
 `take current versions of my config files and sync them up to GH`
